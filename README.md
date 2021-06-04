@@ -1,3 +1,5 @@
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Stanbroek/BakkesModSDK-Python.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Stanbroek/BakkesModSDK-Python/context:python)
+
 # BakkesModSDK - Python
 This plugin adds python bindings to the bakkesmod sdk through [pybind11](https://github.com/pybind/pybind11).  
 Inspired by [BakkesPython](https://github.com/Martinii89/BakkesPython) made by [@Martinii89](https://github.com/Martinii89).
