@@ -1,0 +1,18 @@
+SaveDataWrapper [class]
+public:
+    SaveDataWrapper::SaveDataWrapper(uintptr_t mem) [constructor]
+    SaveDataWrapper::SaveDataWrapper(SaveDataWrapper const & other) [constructor]
+    SaveDataWrapper & SaveDataWrapper::operator=(SaveDataWrapper rhs) [member operator]
+    SaveDataWrapper::~SaveDataWrapper() [destructor]
+    bool SaveDataWrapper::IsNull() const [member function]
+    bool SaveDataWrapper::operator bool() const [casting operator]
+    UnrealStringWrapper SaveDataWrapper::GetDirectoryPath() [member function]
+    UnrealStringWrapper SaveDataWrapper::GetSaveType() [member function]
+    UnrealStringWrapper SaveDataWrapper::GetSaveExt() [member function]
+    long unsigned int SaveDataWrapper::GetbExactFileMatch() [member function]
+    void SaveDataWrapper::SetbExactFileMatch(long unsigned int newbExactFileMatch) [member function]
+    void SaveDataWrapper::Init() [member function]
+private:
+    SaveDataWrapper::Impl [class declaration]
+    SaveDataWrapper::pimpl [variable]
+

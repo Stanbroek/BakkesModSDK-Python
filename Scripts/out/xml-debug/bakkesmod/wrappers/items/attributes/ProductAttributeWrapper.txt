@@ -1,0 +1,15 @@
+ProductAttributeWrapper [class]
+public:
+    ProductAttributeWrapper::ProductAttributeWrapper(uintptr_t mem) [constructor]
+    ProductAttributeWrapper::ProductAttributeWrapper(ProductAttributeWrapper const & other) [constructor]
+    ProductAttributeWrapper & ProductAttributeWrapper::operator=(ProductAttributeWrapper rhs) [member operator]
+    ProductAttributeWrapper::~ProductAttributeWrapper() [destructor]
+    bool ProductAttributeWrapper::IsNull() const [member function]
+    bool ProductAttributeWrapper::operator bool() const [casting operator]
+    std::string ProductAttributeWrapper::GetAttributeType() [member function]
+    std::string ProductAttributeWrapper::GetTypename() [member function]
+    UnrealStringWrapper ProductAttributeWrapper::GetLabel() [member function]
+private:
+    ProductAttributeWrapper::Impl [class declaration]
+    ProductAttributeWrapper::pimpl [variable]
+

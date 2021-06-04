@@ -1,0 +1,21 @@
+ReplayServerWrapper [class]
+public:
+    ReplayServerWrapper::ReplayServerWrapper(uintptr_t server, uintptr_t gameinfo, uintptr_t replaydirector) [constructor]
+    ReplayServerWrapper::ReplayServerWrapper(ReplayServerWrapper const & other) [constructor]
+    ReplayServerWrapper & ReplayServerWrapper::operator=(ReplayServerWrapper rhs) [member operator]
+    ReplayServerWrapper::~ReplayServerWrapper() [destructor]
+    ActorWrapper ReplayServerWrapper::GetViewTarget() [member function]
+    ReplayWrapper ReplayServerWrapper::GetReplay() [member function]
+    float ReplayServerWrapper::GetReplayTimeElapsed() [member function]
+    int ReplayServerWrapper::GetReplayFPS() [member function]
+    int ReplayServerWrapper::GetCurrentReplayFrame() [member function]
+    void ReplayServerWrapper::AddKeyFrame(int frame, std::string name) [member function]
+    void ReplayServerWrapper::RemoveKeyFrame(int frame) [member function]
+    void ReplayServerWrapper::SkipToFrame(int frame) [member function]
+    void ReplayServerWrapper::SkipToTime(float time) [member function]
+    void ReplayServerWrapper::StartPlaybackAtFrame(int frame) [member function]
+    void ReplayServerWrapper::StartPlaybackAtTime(float time) [member function]
+private:
+    ReplayServerWrapper::Impl [class declaration]
+    ReplayServerWrapper::pimpl [variable]
+

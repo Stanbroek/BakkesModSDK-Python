@@ -1,0 +1,12 @@
+ProductAttribute_PaintedWrapper [class]
+public:
+    ProductAttribute_PaintedWrapper::ProductAttribute_PaintedWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_PaintedWrapper::ProductAttribute_PaintedWrapper(ProductAttribute_PaintedWrapper const & other) [constructor]
+    ProductAttribute_PaintedWrapper & ProductAttribute_PaintedWrapper::operator=(ProductAttribute_PaintedWrapper rhs) [member operator]
+    ProductAttribute_PaintedWrapper::~ProductAttribute_PaintedWrapper() [destructor]
+    int ProductAttribute_PaintedWrapper::GetPaintID() [member function]
+    UnrealStringWrapper ProductAttribute_PaintedWrapper::GetSortLabel() [member function]
+private:
+    ProductAttribute_PaintedWrapper::Impl [class declaration]
+    ProductAttribute_PaintedWrapper::pimpl [variable]
+

@@ -1,0 +1,11 @@
+BallCarSpringPickup [class]
+public:
+    BallCarSpringPickup::BallCarSpringPickup(uintptr_t mem) [constructor]
+    BallCarSpringPickup::BallCarSpringPickup(BallCarSpringPickup const & other) [constructor]
+    BallCarSpringPickup & BallCarSpringPickup::operator=(BallCarSpringPickup rhs) [member operator]
+    BallCarSpringPickup::~BallCarSpringPickup() [destructor]
+    void BallCarSpringPickup::ScaleSpringMeshToLocation(Vector & NewLocation, Vector & TargetLocation) [member function]
+private:
+    BallCarSpringPickup::Impl [class declaration]
+    BallCarSpringPickup::pimpl [variable]
+

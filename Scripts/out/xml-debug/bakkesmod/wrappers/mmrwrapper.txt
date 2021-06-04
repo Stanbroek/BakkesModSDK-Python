@@ -1,0 +1,31 @@
+MMRWrapper [class]
+public:
+    MMRWrapper::MMRWrapper(uintptr_t mem) [constructor]
+    MMRWrapper::MMRWrapper(MMRWrapper const & other) [constructor]
+    MMRWrapper & MMRWrapper::operator=(MMRWrapper rhs) [member operator]
+    MMRWrapper::~MMRWrapper() [destructor]
+    bool MMRWrapper::IsSyncing(UniqueIDWrapper playerID) [member function]
+    bool MMRWrapper::IsSyncing(SteamID playerID) [member function]
+    bool MMRWrapper::IsSynced(UniqueIDWrapper playerID, int playlistID) [member function]
+    bool MMRWrapper::IsSynced(SteamID playerID, int playlistID) [member function]
+    bool MMRWrapper::IsRanked(int playlistID) [member function]
+    SkillRating MMRWrapper::GetPlayerSkillRating(UniqueIDWrapper playerID, int playlistID) [member function]
+    SkillRank MMRWrapper::GetPlayerRank(UniqueIDWrapper playerID, int playlistID) [member function]
+    float MMRWrapper::GetPlayerMMR(UniqueIDWrapper playerID, int playlistID) [member function]
+    SkillRating MMRWrapper::GetPlayerSkillRating(SteamID playerID, int playlistID) [member function]
+    SkillRank MMRWrapper::GetPlayerRank(SteamID playerID, int playlistID) [member function]
+    float MMRWrapper::GetPlayerMMR(SteamID playerID, int playlistID) [member function]
+    float MMRWrapper::CalculateMMR(SkillRating sr, bool disregardPlacements) [member function]
+    int MMRWrapper::GetCurrentPlaylist() [member function]
+    std::unique_ptr<MMRNotifierToken, std::default_delete<MMRNotifierToken> > MMRWrapper::RegisterMMRNotifier(std::function<void (UniqueIDWrapper)> arg0) [member function]
+private:
+    MMRWrapper::Impl [class declaration]
+    MMRWrapper::pimpl [variable]
+
+MMRNotifierToken [struct]
+public:
+    MMRNotifierToken::~MMRNotifierToken() [destructor]
+private:
+    MMRNotifierToken::MMRNotifierToken(long long unsigned int t) [constructor]
+    MMRNotifierToken::token [variable]
+

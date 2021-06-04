@@ -1,0 +1,15 @@
+DoubleJumpComponentWrapper [class]
+public:
+    DoubleJumpComponentWrapper::DoubleJumpComponentWrapper(uintptr_t mem) [constructor]
+    DoubleJumpComponentWrapper::DoubleJumpComponentWrapper(DoubleJumpComponentWrapper const & other) [constructor]
+    DoubleJumpComponentWrapper & DoubleJumpComponentWrapper::operator=(DoubleJumpComponentWrapper rhs) [member operator]
+    DoubleJumpComponentWrapper::~DoubleJumpComponentWrapper() [destructor]
+    void DoubleJumpComponentWrapper::SetJumpImpulse(float newJumpImpulse) [member function]
+    float DoubleJumpComponentWrapper::GetImpulseScale() [member function]
+    void DoubleJumpComponentWrapper::SetImpulseScale(float newImpulseScale) [member function]
+    void DoubleJumpComponentWrapper::ApplyForces(float ActiveTime) [member function]
+    void DoubleJumpComponentWrapper::OnCreated() [member function]
+private:
+    DoubleJumpComponentWrapper::Impl [class declaration]
+    DoubleJumpComponentWrapper::pimpl [variable]
+

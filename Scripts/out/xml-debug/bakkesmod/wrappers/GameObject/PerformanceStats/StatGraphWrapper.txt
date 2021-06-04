@@ -1,0 +1,21 @@
+StatGraphWrapper [class]
+public:
+    StatGraphWrapper::StatGraphWrapper(uintptr_t mem) [constructor]
+    StatGraphWrapper::StatGraphWrapper(StatGraphWrapper const & other) [constructor]
+    StatGraphWrapper & StatGraphWrapper::operator=(StatGraphWrapper rhs) [member operator]
+    StatGraphWrapper::~StatGraphWrapper() [destructor]
+    bool StatGraphWrapper::IsNull() const [member function]
+    bool StatGraphWrapper::operator bool() const [casting operator]
+    SampleRecordSettingsWrapper StatGraphWrapper::GetRecordSettings() [member function]
+    void StatGraphWrapper::SetRecordSettings(SampleRecordSettingsWrapper newRecordSettings) [member function]
+    double StatGraphWrapper::GetLastTickTime() [member function]
+    void StatGraphWrapper::SetLastTickTime(double newLastTickTime) [member function]
+    ArrayWrapper<SampleHistoryWrapper> StatGraphWrapper::GetSampleHistories() [member function]
+    void StatGraphWrapper::StopDrawing() [member function]
+    SampleHistoryWrapper StatGraphWrapper::CreateSampleHistory(std::string Title) [member function]
+    SampleHistoryWrapper StatGraphWrapper::AddSampleHistory(SampleHistoryWrapper History) [member function]
+    void StatGraphWrapper::eventConstruct() [member function]
+private:
+    StatGraphWrapper::Impl [class declaration]
+    StatGraphWrapper::pimpl [variable]
+

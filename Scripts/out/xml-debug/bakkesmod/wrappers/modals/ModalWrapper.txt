@@ -1,0 +1,16 @@
+ModalWrapper [class]
+public:
+    ModalWrapper::ModalWrapper(uintptr_t mem) [constructor]
+    ModalWrapper::ModalWrapper(ModalWrapper const & other) [constructor]
+    ModalWrapper & ModalWrapper::operator=(ModalWrapper rhs) [member operator]
+    ModalWrapper::~ModalWrapper() [destructor]
+    void ModalWrapper::ShowModal() const [member function]
+    void ModalWrapper::CloseModal() [member function]
+    void ModalWrapper::SetColor(float r, float g, float b) [member function]
+    void ModalWrapper::SetIcon(std::string const & iconName) [member function]
+    void ModalWrapper::SetBody(std::string const & bodyHtml) [member function]
+    void ModalWrapper::AddButton(std::string const & button_text, bool is_cancel_button, std::function<void ()> click_callback=nullptr) [member function]
+private:
+    ModalWrapper::Impl [class declaration]
+    ModalWrapper::pimpl [variable]
+

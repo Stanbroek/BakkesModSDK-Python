@@ -1,0 +1,28 @@
+BotLoadoutData [struct]
+public:
+    BotLoadoutData::Attribute [struct]
+    public:
+        BotLoadoutData::Attribute::Type [enumeration]
+            ('PAINT', 0)
+            ('ESPORTWHEEL', 1)
+            ('SPECIALEDITION', 2)
+
+        BotLoadoutData::Attribute::type [variable]
+        BotLoadoutData::Attribute::value [variable]
+        BotLoadoutData::Attribute::Attribute() [constructor]
+        BotLoadoutData::Attribute::Attribute(BotLoadoutData::Attribute const & arg0) [constructor]
+        BotLoadoutData::Attribute & BotLoadoutData::Attribute::operator=(BotLoadoutData::Attribute const & arg0) [member operator]
+        BotLoadoutData::Attribute::~Attribute() [destructor]
+
+    BotLoadoutData::products [variable]
+    BotLoadoutData::product_attributes [variable]
+    BotLoadoutData::team [variable]
+    BotLoadoutData::team_finish_id [variable]
+    BotLoadoutData::custom_finish_id [variable]
+    BotLoadoutData::team_color_id [variable]
+    BotLoadoutData::custom_color_id [variable]
+    BotLoadoutData::BotLoadoutData(BotLoadoutData const & arg0) [constructor]
+    BotLoadoutData::~BotLoadoutData() [destructor]
+    BotLoadoutData::BotLoadoutData() [constructor]
+    BotLoadoutData & BotLoadoutData::operator=(BotLoadoutData const & arg0) [member operator]
+

@@ -1,0 +1,11 @@
+ProductAttribute_BodyCompatibilityWrapper [class]
+public:
+    ProductAttribute_BodyCompatibilityWrapper::ProductAttribute_BodyCompatibilityWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_BodyCompatibilityWrapper::ProductAttribute_BodyCompatibilityWrapper(ProductAttribute_BodyCompatibilityWrapper const & other) [constructor]
+    ProductAttribute_BodyCompatibilityWrapper & ProductAttribute_BodyCompatibilityWrapper::operator=(ProductAttribute_BodyCompatibilityWrapper rhs) [member operator]
+    ProductAttribute_BodyCompatibilityWrapper::~ProductAttribute_BodyCompatibilityWrapper() [destructor]
+    ArrayWrapper<ProductWrapper> ProductAttribute_BodyCompatibilityWrapper::GetCompatibleBodies() [member function]
+private:
+    ProductAttribute_BodyCompatibilityWrapper::Impl [class declaration]
+    ProductAttribute_BodyCompatibilityWrapper::pimpl [variable]
+

@@ -1,0 +1,31 @@
+FormField [struct]
+public:
+    FormField::Type [enumeration]
+        ('kString', 0)
+        ('kFile', 1)
+
+    FormField::field_type [variable]
+    FormField::data [variable]
+    FormField::name [variable]
+    FormField::FormField(FormField const & arg0) [constructor]
+    FormField::~FormField() [destructor]
+    FormField::FormField() [constructor]
+    FormField & FormField::operator=(FormField const & arg0) [member operator]
+
+CurlProgressFunction [typedef]
+CurlRequestDoneStringReturn [typedef]
+CurlRequestDoneFileReturn [typedef]
+CurlRequestDoneBinaryReturn [typedef]
+CurlRequest [struct]
+public:
+    CurlRequest::url [variable]
+    CurlRequest::verb [variable]
+    CurlRequest::headers [variable]
+    CurlRequest::body [variable]
+    CurlRequest::form_data [variable]
+    CurlRequest::progress_function [variable]
+    CurlRequest::CurlRequest(CurlRequest const & arg0) [constructor]
+    CurlRequest::~CurlRequest() [destructor]
+    CurlRequest::CurlRequest() [constructor]
+    CurlRequest & CurlRequest::operator=(CurlRequest const & arg0) [member operator]
+

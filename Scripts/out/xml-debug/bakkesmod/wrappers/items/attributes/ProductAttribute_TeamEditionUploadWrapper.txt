@@ -1,0 +1,11 @@
+ProductAttribute_TeamEditionUploadWrapper [class]
+public:
+    ProductAttribute_TeamEditionUploadWrapper::ProductAttribute_TeamEditionUploadWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_TeamEditionUploadWrapper::ProductAttribute_TeamEditionUploadWrapper(ProductAttribute_TeamEditionUploadWrapper const & other) [constructor]
+    ProductAttribute_TeamEditionUploadWrapper & ProductAttribute_TeamEditionUploadWrapper::operator=(ProductAttribute_TeamEditionUploadWrapper rhs) [member operator]
+    ProductAttribute_TeamEditionUploadWrapper::~ProductAttribute_TeamEditionUploadWrapper() [destructor]
+    ArrayWrapper<int> ProductAttribute_TeamEditionUploadWrapper::GetSupportedTeamEditions() [member function]
+private:
+    ProductAttribute_TeamEditionUploadWrapper::Impl [class declaration]
+    ProductAttribute_TeamEditionUploadWrapper::pimpl [variable]
+

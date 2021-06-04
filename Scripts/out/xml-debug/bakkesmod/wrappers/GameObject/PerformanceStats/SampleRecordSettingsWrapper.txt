@@ -1,0 +1,16 @@
+SampleRecordSettingsWrapper [class]
+public:
+    SampleRecordSettingsWrapper::SampleRecordSettingsWrapper(uintptr_t mem) [constructor]
+    SampleRecordSettingsWrapper::SampleRecordSettingsWrapper(SampleRecordSettingsWrapper const & other) [constructor]
+    SampleRecordSettingsWrapper & SampleRecordSettingsWrapper::operator=(SampleRecordSettingsWrapper rhs) [member operator]
+    SampleRecordSettingsWrapper::~SampleRecordSettingsWrapper() [destructor]
+    bool SampleRecordSettingsWrapper::IsNull() const [member function]
+    bool SampleRecordSettingsWrapper::operator bool() const [casting operator]
+    float SampleRecordSettingsWrapper::GetMaxSampleAge() [member function]
+    void SampleRecordSettingsWrapper::SetMaxSampleAge(float newMaxSampleAge) [member function]
+    float SampleRecordSettingsWrapper::GetRecordRate() [member function]
+    void SampleRecordSettingsWrapper::SetRecordRate(float newRecordRate) [member function]
+private:
+    SampleRecordSettingsWrapper::Impl [class declaration]
+    SampleRecordSettingsWrapper::pimpl [variable]
+

@@ -1,0 +1,11 @@
+ProductAttribute_AnimatedSkinLabelWrapper [class]
+public:
+    ProductAttribute_AnimatedSkinLabelWrapper::ProductAttribute_AnimatedSkinLabelWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_AnimatedSkinLabelWrapper::ProductAttribute_AnimatedSkinLabelWrapper(ProductAttribute_AnimatedSkinLabelWrapper const & other) [constructor]
+    ProductAttribute_AnimatedSkinLabelWrapper & ProductAttribute_AnimatedSkinLabelWrapper::operator=(ProductAttribute_AnimatedSkinLabelWrapper rhs) [member operator]
+    ProductAttribute_AnimatedSkinLabelWrapper::~ProductAttribute_AnimatedSkinLabelWrapper() [destructor]
+    UnrealStringWrapper ProductAttribute_AnimatedSkinLabelWrapper::GetAnimatedLabel() [member function]
+private:
+    ProductAttribute_AnimatedSkinLabelWrapper::Impl [class declaration]
+    ProductAttribute_AnimatedSkinLabelWrapper::pimpl [variable]
+

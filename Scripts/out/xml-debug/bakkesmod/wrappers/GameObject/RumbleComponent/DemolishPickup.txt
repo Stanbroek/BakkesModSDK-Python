@@ -1,0 +1,20 @@
+DemolishPickup [class]
+public:
+    DemolishPickup::DemolishPickup(uintptr_t mem) [constructor]
+    DemolishPickup::DemolishPickup(DemolishPickup const & other) [constructor]
+    DemolishPickup & DemolishPickup::operator=(DemolishPickup rhs) [member operator]
+    DemolishPickup::~DemolishPickup() [destructor]
+    unsigned char DemolishPickup::GetDemolishTarget() [member function]
+    void DemolishPickup::SetDemolishTarget(unsigned char newDemolishTarget) [member function]
+    unsigned char DemolishPickup::GetDemolishSpeed() [member function]
+    void DemolishPickup::SetDemolishSpeed(unsigned char newDemolishSpeed) [member function]
+    unsigned char DemolishPickup::GetOldTarget() [member function]
+    void DemolishPickup::SetOldTarget(unsigned char newOldTarget) [member function]
+    unsigned char DemolishPickup::GetOldSpeed() [member function]
+    void DemolishPickup::SetOldSpeed(unsigned char newOldSpeed) [member function]
+    void DemolishPickup::PickupEnd() [member function]
+    void DemolishPickup::PickupStart() [member function]
+private:
+    DemolishPickup::Impl [class declaration]
+    DemolishPickup::pimpl [variable]
+

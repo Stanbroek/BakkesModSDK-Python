@@ -1,0 +1,13 @@
+ProductAttribute_BlueprintWrapper [class]
+public:
+    ProductAttribute_BlueprintWrapper::ProductAttribute_BlueprintWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_BlueprintWrapper::ProductAttribute_BlueprintWrapper(ProductAttribute_BlueprintWrapper const & other) [constructor]
+    ProductAttribute_BlueprintWrapper & ProductAttribute_BlueprintWrapper::operator=(ProductAttribute_BlueprintWrapper rhs) [member operator]
+    ProductAttribute_BlueprintWrapper::~ProductAttribute_BlueprintWrapper() [destructor]
+    int ProductAttribute_BlueprintWrapper::GetProductID() [member function]
+    int ProductAttribute_BlueprintWrapper::GetCachedBlueprintSeriesID() [member function]
+    UnrealStringWrapper ProductAttribute_BlueprintWrapper::GetSortLabel() [member function]
+private:
+    ProductAttribute_BlueprintWrapper::Impl [class declaration]
+    ProductAttribute_BlueprintWrapper::pimpl [variable]
+

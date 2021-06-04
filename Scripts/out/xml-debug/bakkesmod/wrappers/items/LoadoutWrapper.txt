@@ -1,0 +1,18 @@
+LoadoutWrapper [class]
+public:
+    LoadoutWrapper::LoadoutWrapper(uintptr_t mem) [constructor]
+    LoadoutWrapper::LoadoutWrapper(LoadoutWrapper const & other) [constructor]
+    LoadoutWrapper & LoadoutWrapper::operator=(LoadoutWrapper rhs) [member operator]
+    LoadoutWrapper::~LoadoutWrapper() [destructor]
+    bool LoadoutWrapper::IsNull() const [member function]
+    bool LoadoutWrapper::operator bool() const [casting operator]
+    ArrayWrapper<int> LoadoutWrapper::GetLoadout() [member function]
+    ArrayWrapper<unsigned long long> LoadoutWrapper::GetOnlineLoadout() [member function]
+    unsigned char LoadoutWrapper::GetPrimaryPaintColorId() [member function]
+    unsigned char LoadoutWrapper::GetAccentPaintColorId() [member function]
+    int LoadoutWrapper::GetPrimaryFinishId() [member function]
+    int LoadoutWrapper::GetAccentFinishId() [member function]
+private:
+    LoadoutWrapper::Impl [class declaration]
+    LoadoutWrapper::pimpl [variable]
+

@@ -1,0 +1,6 @@
+[submodule "External/BakkesModSDK"]
+	path = External/BakkesModSDK
+	url = https://github.com/bakkesmodorg/BakkesModSDK.git
+[submodule "External/pybind11"]
+	path = External/pybind11
+	url = https://github.com/pybind/pybind11

@@ -1,0 +1,19 @@
+ImageWrapper [class]
+public:
+    ImageWrapper::ImageWrapper(std::string path, bool canvasLoad=false, bool ImGuiLoad=false) [constructor]
+    ImageWrapper::ImageWrapper(std::wstring path, bool canvasLoad=false, bool ImGuiLoad=false) [constructor]
+    ImageWrapper::~ImageWrapper() [destructor]
+    bool ImageWrapper::LoadForCanvas() [member function]
+    bool ImageWrapper::IsLoadedForCanvas() [member function]
+    void * ImageWrapper::GetCanvasTex() [member function]
+    void ImageWrapper::LoadForImGui(std::function<void (bool)> onLoaded) [member function]
+    bool ImageWrapper::IsLoadedForImGui() [member function]
+    void * ImageWrapper::GetImGuiTex() [member function]
+    std::string ImageWrapper::GetPath() [member function]
+    std::wstring ImageWrapper::GetPathW() [member function]
+    Vector2 ImageWrapper::GetSize() [member function]
+    Vector2F ImageWrapper::GetSizeF() [member function]
+private:
+    ImageWrapper::Impl [class declaration]
+    ImageWrapper::pimpl [variable]
+

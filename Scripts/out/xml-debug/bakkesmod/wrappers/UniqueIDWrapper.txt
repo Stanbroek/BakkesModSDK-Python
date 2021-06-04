@@ -1,0 +1,21 @@
+UniqueIDWrapper [class]
+public:
+    UniqueIDWrapper::UniqueIDWrapper() [constructor]
+    UniqueIDWrapper::UniqueIDWrapper(uintptr_t mem) [constructor]
+    UniqueIDWrapper::UniqueIDWrapper(UniqueIDWrapper const & other) [constructor]
+    UniqueIDWrapper & UniqueIDWrapper::operator=(UniqueIDWrapper rhs) [member operator]
+    UniqueIDWrapper::~UniqueIDWrapper() [destructor]
+    OnlinePlatform UniqueIDWrapper::GetPlatform() const [member function]
+    std::string UniqueIDWrapper::GetEpicAccountID() const [member function]
+    long long unsigned int UniqueIDWrapper::GetUID() const [member function]
+    unsigned char UniqueIDWrapper::GetSplitscreenID() const [member function]
+    std::string UniqueIDWrapper::str() const [member function]
+    std::string UniqueIDWrapper::GetIdString() const [member function]
+    static UniqueIDWrapper UniqueIDWrapper::FromEpicAccountID(std::string epicAccountID, long long unsigned int uid, OnlinePlatform platform, unsigned char splitscreenID=0) [member function]
+    bool UniqueIDWrapper::operator<(UniqueIDWrapper const & rhs) const [member operator]
+    bool UniqueIDWrapper::operator==(UniqueIDWrapper const & rhs) const [member operator]
+    bool UniqueIDWrapper::operator!=(UniqueIDWrapper const & rhs) const [member operator]
+protected:
+    UniqueIDWrapper::Impl [class declaration]
+    UniqueIDWrapper::pimpl [variable]
+

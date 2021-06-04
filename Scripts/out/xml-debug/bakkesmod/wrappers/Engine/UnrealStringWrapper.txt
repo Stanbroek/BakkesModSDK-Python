@@ -1,0 +1,14 @@
+UnrealStringWrapper [class]
+public:
+    UnrealStringWrapper::UnrealStringWrapper(uintptr_t mem) [constructor]
+    UnrealStringWrapper::UnrealStringWrapper(UnrealStringWrapper const & other) [constructor]
+    UnrealStringWrapper & UnrealStringWrapper::operator=(UnrealStringWrapper rhs) [member operator]
+    UnrealStringWrapper::~UnrealStringWrapper() [destructor]
+    std::string UnrealStringWrapper::ToString() [member function]
+    std::wstring UnrealStringWrapper::ToWideString() [member function]
+    bool UnrealStringWrapper::IsNull() [member function]
+    bool UnrealStringWrapper::operator bool() [casting operator]
+private:
+    UnrealStringWrapper::Impl [class declaration]
+    UnrealStringWrapper::pimpl [variable]
+

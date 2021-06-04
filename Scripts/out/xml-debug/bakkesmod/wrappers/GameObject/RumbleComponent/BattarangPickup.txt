@@ -1,0 +1,14 @@
+BattarangPickup [class]
+public:
+    BattarangPickup::BattarangPickup(uintptr_t mem) [constructor]
+    BattarangPickup::BattarangPickup(BattarangPickup const & other) [constructor]
+    BattarangPickup & BattarangPickup::operator=(BattarangPickup rhs) [member operator]
+    BattarangPickup::~BattarangPickup() [destructor]
+    float BattarangPickup::GetSpinSpeed() [member function]
+    void BattarangPickup::SetSpinSpeed(float newSpinSpeed) [member function]
+    float BattarangPickup::GetCurRotation() [member function]
+    void BattarangPickup::SetCurRotation(float newCurRotation) [member function]
+private:
+    BattarangPickup::Impl [class declaration]
+    BattarangPickup::pimpl [variable]
+

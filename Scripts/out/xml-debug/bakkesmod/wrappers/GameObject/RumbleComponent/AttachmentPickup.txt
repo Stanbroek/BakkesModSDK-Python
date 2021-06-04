@@ -1,0 +1,12 @@
+AttachmentPickup [class]
+public:
+    AttachmentPickup::AttachmentPickup(uintptr_t mem) [constructor]
+    AttachmentPickup::AttachmentPickup(AttachmentPickup const & other) [constructor]
+    AttachmentPickup & AttachmentPickup::operator=(AttachmentPickup rhs) [member operator]
+    AttachmentPickup::~AttachmentPickup() [destructor]
+    void AttachmentPickup::PickupEnd() [member function]
+    void AttachmentPickup::PickupStart() [member function]
+private:
+    AttachmentPickup::Impl [class declaration]
+    AttachmentPickup::pimpl [variable]
+

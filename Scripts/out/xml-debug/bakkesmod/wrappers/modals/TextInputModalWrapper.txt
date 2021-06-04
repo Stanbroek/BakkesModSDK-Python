@@ -1,0 +1,11 @@
+TextInputModalWrapper [class]
+public:
+    TextInputModalWrapper::TextInputModalWrapper(uintptr_t mem) [constructor]
+    TextInputModalWrapper::TextInputModalWrapper(TextInputModalWrapper const & other) [constructor]
+    TextInputModalWrapper & TextInputModalWrapper::operator=(TextInputModalWrapper rhs) [member operator]
+    TextInputModalWrapper::~TextInputModalWrapper() [destructor]
+    void TextInputModalWrapper::SetTextInput(std::string const & defaultText, int32_t max_text_length, bool password, std::function<void (std::basic_string<char>, bool)> input_callback) [member function]
+private:
+    TextInputModalWrapper::Impl [class declaration]
+    TextInputModalWrapper::pimpl [variable]
+

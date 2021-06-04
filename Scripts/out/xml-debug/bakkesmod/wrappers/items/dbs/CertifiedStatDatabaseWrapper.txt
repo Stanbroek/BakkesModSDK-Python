@@ -1,0 +1,14 @@
+CertifiedStatDatabaseWrapper [class]
+public:
+    CertifiedStatDatabaseWrapper::CertifiedStatDatabaseWrapper(uintptr_t mem) [constructor]
+    CertifiedStatDatabaseWrapper::CertifiedStatDatabaseWrapper(CertifiedStatDatabaseWrapper const & other) [constructor]
+    CertifiedStatDatabaseWrapper & CertifiedStatDatabaseWrapper::operator=(CertifiedStatDatabaseWrapper rhs) [member operator]
+    CertifiedStatDatabaseWrapper::~CertifiedStatDatabaseWrapper() [destructor]
+    bool CertifiedStatDatabaseWrapper::IsNull() const [member function]
+    bool CertifiedStatDatabaseWrapper::operator bool() const [casting operator]
+    std::string CertifiedStatDatabaseWrapper::GetStatName(int StatId) [member function]
+    int CertifiedStatDatabaseWrapper::GetStatId(std::string & StatName) [member function]
+private:
+    CertifiedStatDatabaseWrapper::Impl [class declaration]
+    CertifiedStatDatabaseWrapper::pimpl [variable]
+

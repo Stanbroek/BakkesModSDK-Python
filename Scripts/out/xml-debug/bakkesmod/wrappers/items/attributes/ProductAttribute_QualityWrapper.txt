@@ -1,0 +1,12 @@
+ProductAttribute_QualityWrapper [class]
+public:
+    ProductAttribute_QualityWrapper::ProductAttribute_QualityWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_QualityWrapper::ProductAttribute_QualityWrapper(ProductAttribute_QualityWrapper const & other) [constructor]
+    ProductAttribute_QualityWrapper & ProductAttribute_QualityWrapper::operator=(ProductAttribute_QualityWrapper rhs) [member operator]
+    ProductAttribute_QualityWrapper::~ProductAttribute_QualityWrapper() [destructor]
+    unsigned char ProductAttribute_QualityWrapper::GetQuality() [member function]
+    UnrealStringWrapper ProductAttribute_QualityWrapper::ProductQualityToString(unsigned char InQuality) [member function]
+private:
+    ProductAttribute_QualityWrapper::Impl [class declaration]
+    ProductAttribute_QualityWrapper::pimpl [variable]
+

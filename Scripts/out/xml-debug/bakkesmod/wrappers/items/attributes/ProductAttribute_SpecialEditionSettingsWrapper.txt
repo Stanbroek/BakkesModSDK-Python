@@ -1,0 +1,21 @@
+SpecialEdition [struct]
+public:
+    SpecialEdition::productId [variable]
+    SpecialEdition::editionId [variable]
+    SpecialEdition::label [variable]
+    SpecialEdition::SpecialEdition(SpecialEdition const & arg0) [constructor]
+    SpecialEdition::~SpecialEdition() [destructor]
+    SpecialEdition::SpecialEdition() [constructor]
+    SpecialEdition & SpecialEdition::operator=(SpecialEdition const & arg0) [member operator]
+
+ProductAttribute_SpecialEditionSettingsWrapper [class]
+public:
+    ProductAttribute_SpecialEditionSettingsWrapper::ProductAttribute_SpecialEditionSettingsWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_SpecialEditionSettingsWrapper::ProductAttribute_SpecialEditionSettingsWrapper(ProductAttribute_SpecialEditionSettingsWrapper const & other) [constructor]
+    ProductAttribute_SpecialEditionSettingsWrapper & ProductAttribute_SpecialEditionSettingsWrapper::operator=(ProductAttribute_SpecialEditionSettingsWrapper rhs) [member operator]
+    ProductAttribute_SpecialEditionSettingsWrapper::~ProductAttribute_SpecialEditionSettingsWrapper() [destructor]
+    std::vector<SpecialEdition, std::allocator<SpecialEdition> > ProductAttribute_SpecialEditionSettingsWrapper::GetEditions() [member function]
+private:
+    ProductAttribute_SpecialEditionSettingsWrapper::Impl [class declaration]
+    ProductAttribute_SpecialEditionSettingsWrapper::pimpl [variable]
+

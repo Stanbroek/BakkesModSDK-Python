@@ -1,0 +1,16 @@
+ClubSettingsWrapper [class]
+public:
+    ClubSettingsWrapper::ClubSettingsWrapper(uintptr_t mem) [constructor]
+    ClubSettingsWrapper::ClubSettingsWrapper(ClubSettingsWrapper const & other) [constructor]
+    ClubSettingsWrapper & ClubSettingsWrapper::operator=(ClubSettingsWrapper rhs) [member operator]
+    ClubSettingsWrapper::~ClubSettingsWrapper() [destructor]
+    bool ClubSettingsWrapper::IsNull() const [member function]
+    bool ClubSettingsWrapper::operator bool() const [casting operator]
+    UnrealStringWrapper ClubSettingsWrapper::GetClubName() [member function]
+    UnrealStringWrapper ClubSettingsWrapper::GetClubTag() [member function]
+    int ClubSettingsWrapper::GetPrimaryColor() [member function]
+    int ClubSettingsWrapper::GetAccentColor() [member function]
+private:
+    ClubSettingsWrapper::Impl [class declaration]
+    ClubSettingsWrapper::pimpl [variable]
+

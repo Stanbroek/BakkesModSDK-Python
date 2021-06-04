@@ -1,0 +1,58 @@
+void bind_WheelWrapper(pybind11::module& m)
+{
+
+	pybind11::class_<WheelWrapper, std::shared_ptr<WheelWrapper>, ObjectWrapper> cl_WheelWrapper(m, "WheelWrapper");
+	cl_WheelWrapper.def(pybind11::init<uintptr_t>(), pybind11::arg("mem"));
+	cl_WheelWrapper.def(pybind11::init<WheelWrapper const &>(), pybind11::arg("other"));
+	// cl_WheelWrapper.def(pybind11::del<>());
+	cl_WheelWrapper.def("IsNull", [](WheelWrapper& cls_) { return cls_.IsNull(); });
+	cl_WheelWrapper.def("GetSteerFactor", [](WheelWrapper& cls_) { return cls_.GetSteerFactor(); });
+	cl_WheelWrapper.def("SetSteerFactor", [](WheelWrapper& cls_, float newSteerFactor) { return cls_.SetSteerFactor(newSteerFactor); }, pybind11::arg("newSteerFactor"));
+	cl_WheelWrapper.def("GetWheelRadius", [](WheelWrapper& cls_) { return cls_.GetWheelRadius(); });
+	cl_WheelWrapper.def("SetWheelRadius", [](WheelWrapper& cls_, float newWheelRadius) { return cls_.SetWheelRadius(newWheelRadius); }, pybind11::arg("newWheelRadius"));
+	cl_WheelWrapper.def("GetSuspensionStiffness", [](WheelWrapper& cls_) { return cls_.GetSuspensionStiffness(); });
+	cl_WheelWrapper.def("SetSuspensionStiffness", [](WheelWrapper& cls_, float newSuspensionStiffness) { return cls_.SetSuspensionStiffness(newSuspensionStiffness); }, pybind11::arg("newSuspensionStiffness"));
+	cl_WheelWrapper.def("GetSuspensionDampingCompression", [](WheelWrapper& cls_) { return cls_.GetSuspensionDampingCompression(); });
+	cl_WheelWrapper.def("SetSuspensionDampingCompression", [](WheelWrapper& cls_, float newSuspensionDampingCompression) { return cls_.SetSuspensionDampingCompression(newSuspensionDampingCompression); }, pybind11::arg("newSuspensionDampingCompression"));
+	cl_WheelWrapper.def("GetSuspensionDampingRelaxation", [](WheelWrapper& cls_) { return cls_.GetSuspensionDampingRelaxation(); });
+	cl_WheelWrapper.def("SetSuspensionDampingRelaxation", [](WheelWrapper& cls_, float newSuspensionDampingRelaxation) { return cls_.SetSuspensionDampingRelaxation(newSuspensionDampingRelaxation); }, pybind11::arg("newSuspensionDampingRelaxation"));
+	cl_WheelWrapper.def("GetSuspensionTravel", [](WheelWrapper& cls_) { return cls_.GetSuspensionTravel(); });
+	cl_WheelWrapper.def("SetSuspensionTravel", [](WheelWrapper& cls_, float newSuspensionTravel) { return cls_.SetSuspensionTravel(newSuspensionTravel); }, pybind11::arg("newSuspensionTravel"));
+	cl_WheelWrapper.def("GetSuspensionMaxRaise", [](WheelWrapper& cls_) { return cls_.GetSuspensionMaxRaise(); });
+	cl_WheelWrapper.def("SetSuspensionMaxRaise", [](WheelWrapper& cls_, float newSuspensionMaxRaise) { return cls_.SetSuspensionMaxRaise(newSuspensionMaxRaise); }, pybind11::arg("newSuspensionMaxRaise"));
+	cl_WheelWrapper.def("GetContactForceDistance", [](WheelWrapper& cls_) { return cls_.GetContactForceDistance(); });
+	cl_WheelWrapper.def("SetContactForceDistance", [](WheelWrapper& cls_, float newContactForceDistance) { return cls_.SetContactForceDistance(newContactForceDistance); }, pybind11::arg("newContactForceDistance"));
+	cl_WheelWrapper.def("GetSpinSpeedDecayRate", [](WheelWrapper& cls_) { return cls_.GetSpinSpeedDecayRate(); });
+	cl_WheelWrapper.def("SetSpinSpeedDecayRate", [](WheelWrapper& cls_, float newSpinSpeedDecayRate) { return cls_.SetSpinSpeedDecayRate(newSpinSpeedDecayRate); }, pybind11::arg("newSpinSpeedDecayRate"));
+	cl_WheelWrapper.def("GetBoneOffset", [](WheelWrapper& cls_) { return cls_.GetBoneOffset(); });
+	cl_WheelWrapper.def("SetBoneOffset", [](WheelWrapper& cls_, Vector newBoneOffset) { return cls_.SetBoneOffset(newBoneOffset); }, pybind11::arg("newBoneOffset"));
+	cl_WheelWrapper.def("GetPresetRestPosition", [](WheelWrapper& cls_) { return cls_.GetPresetRestPosition(); });
+	cl_WheelWrapper.def("SetPresetRestPosition", [](WheelWrapper& cls_, Vector newPresetRestPosition) { return cls_.SetPresetRestPosition(newPresetRestPosition); }, pybind11::arg("newPresetRestPosition"));
+	cl_WheelWrapper.def("GetLocalSuspensionRayStart", [](WheelWrapper& cls_) { return cls_.GetLocalSuspensionRayStart(); });
+	cl_WheelWrapper.def("SetLocalSuspensionRayStart", [](WheelWrapper& cls_, Vector newLocalSuspensionRayStart) { return cls_.SetLocalSuspensionRayStart(newLocalSuspensionRayStart); }, pybind11::arg("newLocalSuspensionRayStart"));
+	cl_WheelWrapper.def("GetLocalRestPosition", [](WheelWrapper& cls_) { return cls_.GetLocalRestPosition(); });
+	cl_WheelWrapper.def("SetLocalRestPosition", [](WheelWrapper& cls_, Vector newLocalRestPosition) { return cls_.SetLocalRestPosition(newLocalRestPosition); }, pybind11::arg("newLocalRestPosition"));
+	cl_WheelWrapper.def("GetVehicleSim", [](WheelWrapper& cls_) { return cls_.GetVehicleSim(); });
+	cl_WheelWrapper.def("SetVehicleSim", [](WheelWrapper& cls_, VehicleSimWrapper newVehicleSim) { return cls_.SetVehicleSim(newVehicleSim); }, pybind11::arg("newVehicleSim"));
+	cl_WheelWrapper.def("GetWheelIndex", [](WheelWrapper& cls_) { return cls_.GetWheelIndex(); });
+	cl_WheelWrapper.def("SetWheelIndex", [](WheelWrapper& cls_, int newWheelIndex) { return cls_.SetWheelIndex(newWheelIndex); }, pybind11::arg("newWheelIndex"));
+	cl_WheelWrapper.def("GetContact", [](WheelWrapper& cls_) { return cls_.GetContact(); });
+	cl_WheelWrapper.def("SetContact", [](WheelWrapper& cls_, WheelContactData newContact) { return cls_.SetContact(newContact); }, pybind11::arg("newContact"));
+	cl_WheelWrapper.def("GetbDrawDebug", [](WheelWrapper& cls_) { return cls_.GetbDrawDebug(); });
+	cl_WheelWrapper.def("SetbDrawDebug", [](WheelWrapper& cls_, long unsigned int newbDrawDebug) { return cls_.SetbDrawDebug(newbDrawDebug); }, pybind11::arg("newbDrawDebug"));
+	cl_WheelWrapper.def("GetbHadContact", [](WheelWrapper& cls_) { return cls_.GetbHadContact(); });
+	cl_WheelWrapper.def("SetbHadContact", [](WheelWrapper& cls_, long unsigned int newbHadContact) { return cls_.SetbHadContact(newbHadContact); }, pybind11::arg("newbHadContact"));
+	cl_WheelWrapper.def("GetFrictionCurveInput", [](WheelWrapper& cls_) { return cls_.GetFrictionCurveInput(); });
+	cl_WheelWrapper.def("SetFrictionCurveInput", [](WheelWrapper& cls_, float newFrictionCurveInput) { return cls_.SetFrictionCurveInput(newFrictionCurveInput); }, pybind11::arg("newFrictionCurveInput"));
+	cl_WheelWrapper.def("GetAerialThrottleToVelocityFactor", [](WheelWrapper& cls_) { return cls_.GetAerialThrottleToVelocityFactor(); });
+	cl_WheelWrapper.def("SetAerialThrottleToVelocityFactor", [](WheelWrapper& cls_, float newAerialThrottleToVelocityFactor) { return cls_.SetAerialThrottleToVelocityFactor(newAerialThrottleToVelocityFactor); }, pybind11::arg("newAerialThrottleToVelocityFactor"));
+	cl_WheelWrapper.def("GetAerialAccelerationFactor", [](WheelWrapper& cls_) { return cls_.GetAerialAccelerationFactor(); });
+	cl_WheelWrapper.def("SetAerialAccelerationFactor", [](WheelWrapper& cls_, float newAerialAccelerationFactor) { return cls_.SetAerialAccelerationFactor(newAerialAccelerationFactor); }, pybind11::arg("newAerialAccelerationFactor"));
+	cl_WheelWrapper.def("GetSpinSpeed", [](WheelWrapper& cls_) { return cls_.GetSpinSpeed(); });
+	cl_WheelWrapper.def("SetSpinSpeed", [](WheelWrapper& cls_, float newSpinSpeed) { return cls_.SetSpinSpeed(newSpinSpeed); }, pybind11::arg("newSpinSpeed"));
+	cl_WheelWrapper.def("GetRefWheelLocation", [](WheelWrapper& cls_) { return cls_.GetRefWheelLocation(); });
+	cl_WheelWrapper.def("GetSuspensionDistance", [](WheelWrapper& cls_) { return cls_.GetSuspensionDistance(); });
+	cl_WheelWrapper.def("GetSteer2", [](WheelWrapper& cls_) { return cls_.GetSteer2(); });
+	cl_WheelWrapper.def("GetLinearVelocity", [](WheelWrapper& cls_) { return cls_.GetLinearVelocity(); });
+	cl_WheelWrapper.def("EventContactChanged", [](WheelWrapper& cls_, WheelWrapper Wheel) { return cls_.EventContactChanged(Wheel); }, pybind11::arg("Wheel"));
+}

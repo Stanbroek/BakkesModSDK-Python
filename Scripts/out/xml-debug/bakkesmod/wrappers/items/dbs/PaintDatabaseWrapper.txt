@@ -1,0 +1,14 @@
+PaintDatabaseWrapper [class]
+public:
+    PaintDatabaseWrapper::PaintDatabaseWrapper(uintptr_t mem) [constructor]
+    PaintDatabaseWrapper::PaintDatabaseWrapper(PaintDatabaseWrapper const & other) [constructor]
+    PaintDatabaseWrapper & PaintDatabaseWrapper::operator=(PaintDatabaseWrapper rhs) [member operator]
+    PaintDatabaseWrapper::~PaintDatabaseWrapper() [destructor]
+    bool PaintDatabaseWrapper::IsNull() const [member function]
+    bool PaintDatabaseWrapper::operator bool() const [casting operator]
+    std::string PaintDatabaseWrapper::GetPaintName(int PaintID) [member function]
+    int PaintDatabaseWrapper::GetPaintID(std::string & PaintName) [member function]
+private:
+    PaintDatabaseWrapper::Impl [class declaration]
+    PaintDatabaseWrapper::pimpl [variable]
+

@@ -1,0 +1,11 @@
+ProductAttribute_BlueprintCostWrapper [class]
+public:
+    ProductAttribute_BlueprintCostWrapper::ProductAttribute_BlueprintCostWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_BlueprintCostWrapper::ProductAttribute_BlueprintCostWrapper(ProductAttribute_BlueprintCostWrapper const & other) [constructor]
+    ProductAttribute_BlueprintCostWrapper & ProductAttribute_BlueprintCostWrapper::operator=(ProductAttribute_BlueprintCostWrapper rhs) [member operator]
+    ProductAttribute_BlueprintCostWrapper::~ProductAttribute_BlueprintCostWrapper() [destructor]
+    int ProductAttribute_BlueprintCostWrapper::GetCost() [member function]
+private:
+    ProductAttribute_BlueprintCostWrapper::Impl [class declaration]
+    ProductAttribute_BlueprintCostWrapper::pimpl [variable]
+

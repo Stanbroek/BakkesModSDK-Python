@@ -1,0 +1,14 @@
+SequenceWrapper [class]
+public:
+    SequenceWrapper::SequenceWrapper(uintptr_t mem) [constructor]
+    SequenceWrapper::SequenceWrapper(SequenceWrapper const & other) [constructor]
+    SequenceWrapper & SequenceWrapper::operator=(SequenceWrapper rhs) [member operator]
+    SequenceWrapper::~SequenceWrapper() [destructor]
+    ArrayWrapper<SequenceObjectWrapper> SequenceWrapper::GetSequenceObjects() [member function]
+    ArrayWrapper<SequenceWrapper> SequenceWrapper::GetNestedSequences() [member function]
+    int SequenceWrapper::ActivateRemoteEvents(std::string const & remote_event_name) const [member function]
+    std::map<std::basic_string<char>, SequenceVariableWrapper, std::less<std::basic_string<char> >, std::allocator<std::pair<const std::basic_string<char>, SequenceVariableWrapper> > > SequenceWrapper::GetAllSequenceVariables(bool reqursive) [member function]
+private:
+    SequenceWrapper::Impl [class declaration]
+    SequenceWrapper::pimpl [variable]
+

@@ -1,0 +1,21 @@
+TeamInfoWrapper [class]
+public:
+    TeamInfoWrapper::TeamInfoWrapper(uintptr_t mem) [constructor]
+    TeamInfoWrapper::TeamInfoWrapper(TeamInfoWrapper const & other) [constructor]
+    TeamInfoWrapper & TeamInfoWrapper::operator=(TeamInfoWrapper rhs) [member operator]
+    TeamInfoWrapper::~TeamInfoWrapper() [destructor]
+    UnrealStringWrapper TeamInfoWrapper::GetTeamName() [member function]
+    int TeamInfoWrapper::GetSize() [member function]
+    void TeamInfoWrapper::SetSize(int newSize) [member function]
+    int TeamInfoWrapper::GetScore() [member function]
+    void TeamInfoWrapper::SetScore(int newScore) [member function]
+    int TeamInfoWrapper::GetTeamIndex() [member function]
+    void TeamInfoWrapper::SetTeamIndex(int newTeamIndex) [member function]
+    UnrealColor TeamInfoWrapper::GetTeamColor() [member function]
+    void TeamInfoWrapper::SetTeamColor(UnrealColor newTeamColor) [member function]
+    unsigned char TeamInfoWrapper::GetTeamNum() [member function]
+    void TeamInfoWrapper::eventDestroyed() [member function]
+private:
+    TeamInfoWrapper::Impl [class declaration]
+    TeamInfoWrapper::pimpl [variable]
+

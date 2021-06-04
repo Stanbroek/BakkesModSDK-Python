@@ -1,0 +1,16 @@
+SequenceObjectWrapper [class]
+public:
+    SequenceObjectWrapper::SequenceObjectWrapper(uintptr_t mem) [constructor]
+    SequenceObjectWrapper::SequenceObjectWrapper(SequenceObjectWrapper const & other) [constructor]
+    SequenceObjectWrapper & SequenceObjectWrapper::operator=(SequenceObjectWrapper rhs) [member operator]
+    SequenceObjectWrapper::~SequenceObjectWrapper() [destructor]
+    bool SequenceObjectWrapper::IsNull() const [member function]
+    bool SequenceObjectWrapper::operator bool() const [casting operator]
+    SequenceWrapper SequenceObjectWrapper::GetParentSequence() [member function]
+    UnrealStringWrapper SequenceObjectWrapper::GetObjName() [member function]
+    UnrealStringWrapper SequenceObjectWrapper::GetObjCategory() [member function]
+    UnrealStringWrapper SequenceObjectWrapper::GetObjComment() [member function]
+private:
+    SequenceObjectWrapper::Impl [class declaration]
+    SequenceObjectWrapper::pimpl [variable]
+

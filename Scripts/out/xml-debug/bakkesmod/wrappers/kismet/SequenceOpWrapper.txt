@@ -1,0 +1,10 @@
+SequenceOpWrapper [class]
+public:
+    SequenceOpWrapper::SequenceOpWrapper(uintptr_t mem) [constructor]
+    SequenceOpWrapper::SequenceOpWrapper(SequenceOpWrapper const & other) [constructor]
+    SequenceOpWrapper & SequenceOpWrapper::operator=(SequenceOpWrapper rhs) [member operator]
+    SequenceOpWrapper::~SequenceOpWrapper() [destructor]
+private:
+    SequenceOpWrapper::Impl [class declaration]
+    SequenceOpWrapper::pimpl [variable]
+

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\bindings">
+      <UniqueIdentifier>{e0ce87ac-b643-4d57-aa85-c6e35de9ddf5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bindings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\core\bot_loadout_structs.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\core\http_structs.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\plugin\bakkesmodplugin.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\plugin\bakkesmodsdk.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\AIControllerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\arraywrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\canvaswrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\ControllerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\CVarManagerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\cvarwrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\Engine\ActorWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\Engine\EngineTAWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\Engine\ObjectWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\Engine\UnrealStringWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\Engine\WorldInfoWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\GameEditorWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\GameEventWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\GameSettingPlaylistWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\ReplayDirectorWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\ReplaySoccarWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\ReplayWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\SaveData\GameEditorSaveDataWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\SaveData\SaveDataWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\SaveData\TrainingEditorSaveDataWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\ServerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\TeamGameEventWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\TrainingEditorWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameEvent\TutorialWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\BallWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\BaseCameraWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\BoostPickupWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CameraWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CameraXWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\AirControlComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\BoostWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\CarComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\DodgeComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\DoubleJumpComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\FlipCarComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\JumpComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\PrimitiveComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\VehicleSimWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarComponent\WheelWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\CarWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\ClubDetailsWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\ClubSettingsWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\FXActorWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\GoalWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\InputBufferGraphWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\NetStatGraphWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\PerfStatGraphWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\SampleHistoryWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\SampleRecordSettingsWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\StartGraphSystemWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\StatGraphSystemWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PerformanceStats\StatGraphWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PhysicalMaterialPropertyWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PlayerReplicationInfoWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PriWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\PriXWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RBActorWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\AttachmentPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BallCarSpringPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BallFreezePickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BallLassoPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BasketballPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BattarangPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BoostModPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\BoostOverridePickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\CarSpeedPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\DemolishPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\GrapplingHookPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\GravityPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\HandbrakeOverridePickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\HitForcePickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\RumblePickupComponentWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\SpringPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\SwapperPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\TargetedPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\TimeBombPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\TornadoPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\RumbleComponent\VelcroPickup.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\Stats\StatEventWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\TeamInfoWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\TeamWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\VehiclePickupWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameObject\VehicleWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\GameWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\http\HttpWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\ImageWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttributeWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_AnimatedSkinLabelWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_BlueprintCostWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_BlueprintWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_BodyCompatibilityWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_CertifiedWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_CurrencyWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_PaintedWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_QualityWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_SpecialEditionSettingsWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_SpecialEditionWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_TeamEditionUploadWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_TeamEditionWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\attributes\ProductAttribute_UnlockMethodWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\dbs\CertifiedStatDatabaseWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\dbs\DataAssetDatabaseWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\dbs\DataAssetDatabase_ESportsTeamWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\dbs\PaintDatabaseWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\dbs\SpecialEditionDatabaseWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\ItemsWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\LoadoutWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\OnlineProductWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\ProductSlotWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\ProductTemplateWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\ProductTradeInWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\ProductWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\items\TradeWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\kismet\SequenceObjectWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\kismet\SequenceOpWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\kismet\SequenceVariableWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\kismet\SequenceWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\linmath.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\MatchmakingWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\mmrwrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\modals\ModalWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\modals\TextInputModalWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\PlayerControllerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\PluginManagerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\ReplayServerWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\SettingsWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\StructArrayWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\UniqueIDWrapper.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Scripts\out\pybind11-module\bakkesmod\wrappers\WrapperStructs.cpp">
+      <Filter>Resource Files\bindings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

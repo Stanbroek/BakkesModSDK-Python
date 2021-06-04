@@ -1,0 +1,97 @@
+MatchmakingWrapper [class]
+public:
+    MatchmakingWrapper::MatchmakingWrapper(uintptr_t mem) [constructor]
+    MatchmakingWrapper::MatchmakingWrapper(MatchmakingWrapper const & other) [constructor]
+    MatchmakingWrapper & MatchmakingWrapper::operator=(MatchmakingWrapper rhs) [member operator]
+    MatchmakingWrapper::~MatchmakingWrapper() [destructor]
+    bool MatchmakingWrapper::IsNull() const [member function]
+    bool MatchmakingWrapper::operator bool() const [casting operator]
+    bool MatchmakingWrapper::IsSearching() [member function]
+    int MatchmakingWrapper::GetActiveViewTab() [member function]
+    void MatchmakingWrapper::SetRegionSelection(Region region, bool bSelected) [member function]
+    void MatchmakingWrapper::SetPlaylistSelection(Playlist playlist, bool bSelected) [member function]
+    void MatchmakingWrapper::StartMatchmaking(PlaylistCategory playlist_category) [member function]
+    void MatchmakingWrapper::CancelMatchmaking() [member function]
+    void MatchmakingWrapper::CreatePrivateMatch(Region region, CustomMatchSettings const & match_settings) [member function]
+    void MatchmakingWrapper::JoinPrivateMatch(std::string const & server_name, std::string const & server_password="") [member function]
+    int MatchmakingWrapper::SeasonEndDays() [member function]
+    int MatchmakingWrapper::SeasonEndHours() [member function]
+    int MatchmakingWrapper::SeasonEndMinutes() [member function]
+    int MatchmakingWrapper::GetSeasonTimeRemaining() [member function]
+    int MatchmakingWrapper::GetSeasonEndTimeSeconds() [member function]
+    bool MatchmakingWrapper::HasSeasonEnded() [member function]
+    int MatchmakingWrapper::GetTotalPopulation() [member function]
+    static std::string MatchmakingWrapper::GetRegionID(Region region) [member function]
+    static std::string MatchmakingWrapper::GetRegionLabel(Region region) [member function]
+private:
+    MatchmakingWrapper::Impl [class declaration]
+    MatchmakingWrapper::pimpl [variable]
+
+Region [enumeration]
+    ('USE', 0)
+    ('EU', 1)
+    ('USW', 2)
+    ('ASC', 3)
+    ('ASM', 4)
+    ('JPN', 5)
+    ('ME', 6)
+    ('OCE', 7)
+    ('SAF', 8)
+    ('SAM', 9)
+
+Playlist [enumeration]
+    ('CASUAL_STANDARD', 0)
+    ('CASUAL_DOUBLES', 1)
+    ('CASUAL_DUELS', 2)
+    ('CASUAL_CHAOS', 3)
+    ('RANKED_STANDARD', 4)
+    ('RANKED_DOUBLES', 5)
+    ('RANKED_DUELS', 6)
+    ('EXTRAS_RUMBLE', 12)
+    ('EXTRAS_DROPSHOT', 13)
+    ('EXTRAS_HOOPS', 14)
+    ('EXTRAS_SNOWDAY', 15)
+
+PlaylistCategory [enumeration]
+    ('CASUAL', 0)
+    ('RANKED', 1)
+    ('EXTRAS', 2)
+
+ClubColorSet [struct]
+public:
+    ClubColorSet::TeamColorID [variable]
+    ClubColorSet::CustomColorID [variable]
+    ClubColorSet::bTeamColorSet [variable]
+    ClubColorSet::bCustomColorSet [variable]
+    ClubColorSet::ClubColorSet(ClubColorSet const & arg0) [constructor]
+    ClubColorSet::~ClubColorSet() [destructor]
+    ClubColorSet & ClubColorSet::operator=(ClubColorSet const & arg0) [member operator]
+    ClubColorSet::ClubColorSet() [constructor]
+
+CustomMatchTeamSettings [struct]
+public:
+    CustomMatchTeamSettings::Name [variable]
+    CustomMatchTeamSettings::Colors [variable]
+    CustomMatchTeamSettings::GameScore [variable]
+    CustomMatchTeamSettings::CustomMatchTeamSettings(CustomMatchTeamSettings const & arg0) [constructor]
+    CustomMatchTeamSettings::~CustomMatchTeamSettings() [destructor]
+    CustomMatchTeamSettings & CustomMatchTeamSettings::operator=(CustomMatchTeamSettings const & arg0) [member operator]
+    CustomMatchTeamSettings::CustomMatchTeamSettings() [constructor]
+
+CustomMatchSettings [struct]
+public:
+    CustomMatchSettings::GameTags [variable]
+    CustomMatchSettings::MapName [variable]
+    CustomMatchSettings::ServerName [variable]
+    CustomMatchSettings::Password [variable]
+    CustomMatchSettings::BlueTeamSettings [variable]
+    CustomMatchSettings::OrangeTeamSettings [variable]
+    CustomMatchSettings::GameMode [variable]
+    CustomMatchSettings::MaxPlayerCount [variable]
+    CustomMatchSettings::bPartyMembersOnly [variable]
+    CustomMatchSettings::bClubServer [variable]
+    CustomMatchSettings::CustomMatchSettings(CustomMatchSettings const & arg0) [constructor]
+    CustomMatchSettings::~CustomMatchSettings() [destructor]
+    CustomMatchSettings::CustomMatchSettings() [constructor]
+    CustomMatchSettings & CustomMatchSettings::operator=(CustomMatchSettings const & arg0) [member operator]
+

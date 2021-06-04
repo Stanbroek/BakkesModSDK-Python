@@ -1,0 +1,10 @@
+DataAssetDatabase_ESportsTeamWrapper [class]
+public:
+    DataAssetDatabase_ESportsTeamWrapper::DataAssetDatabase_ESportsTeamWrapper(uintptr_t mem) [constructor]
+    DataAssetDatabase_ESportsTeamWrapper::DataAssetDatabase_ESportsTeamWrapper(DataAssetDatabase_ESportsTeamWrapper const & other) [constructor]
+    DataAssetDatabase_ESportsTeamWrapper & DataAssetDatabase_ESportsTeamWrapper::operator=(DataAssetDatabase_ESportsTeamWrapper rhs) [member operator]
+    DataAssetDatabase_ESportsTeamWrapper::~DataAssetDatabase_ESportsTeamWrapper() [destructor]
+private:
+    DataAssetDatabase_ESportsTeamWrapper::Impl [class declaration]
+    DataAssetDatabase_ESportsTeamWrapper::pimpl [variable]
+

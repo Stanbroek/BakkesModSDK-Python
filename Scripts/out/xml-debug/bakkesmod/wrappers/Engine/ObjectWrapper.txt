@@ -1,0 +1,8 @@
+ObjectWrapper [class]
+public:
+    ObjectWrapper::memory_address [variable]
+    ObjectWrapper::ObjectWrapper(uintptr_t mem) [constructor]
+    ObjectWrapper::ObjectWrapper(ObjectWrapper const & arg0) [constructor]
+    ObjectWrapper & ObjectWrapper::operator=(ObjectWrapper const & arg0) [member operator]
+    ObjectWrapper::~ObjectWrapper() [destructor]
+

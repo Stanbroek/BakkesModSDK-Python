@@ -1,0 +1,17 @@
+ProductTemplateWrapper [class]
+public:
+    ProductTemplateWrapper::ProductTemplateWrapper(uintptr_t mem) [constructor]
+    ProductTemplateWrapper::ProductTemplateWrapper(ProductTemplateWrapper const & other) [constructor]
+    ProductTemplateWrapper & ProductTemplateWrapper::operator=(ProductTemplateWrapper rhs) [member operator]
+    ProductTemplateWrapper::~ProductTemplateWrapper() [destructor]
+    bool ProductTemplateWrapper::IsNull() const [member function]
+    bool ProductTemplateWrapper::operator bool() const [casting operator]
+    ProductSlotWrapper ProductTemplateWrapper::GetSlot() [member function]
+    unsigned char ProductTemplateWrapper::GetUnlockMethod() [member function]
+    unsigned char ProductTemplateWrapper::GetQuality() [member function]
+    ProductWrapper ProductTemplateWrapper::GetRequiredProduct() [member function]
+    long unsigned int ProductTemplateWrapper::GetbLicensed() [member function]
+private:
+    ProductTemplateWrapper::Impl [class declaration]
+    ProductTemplateWrapper::pimpl [variable]
+

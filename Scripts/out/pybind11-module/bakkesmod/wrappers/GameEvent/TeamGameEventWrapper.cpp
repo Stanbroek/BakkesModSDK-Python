@@ -1,0 +1,56 @@
+void bind_TeamGameEventWrapper(pybind11::module& m)
+{
+
+	pybind11::class_<TeamGameEventWrapper, std::shared_ptr<TeamGameEventWrapper>, GameEventWrapper> cl_TeamGameEventWrapper(m, "TeamGameEventWrapper");
+	cl_TeamGameEventWrapper.def(pybind11::init<uintptr_t>(), pybind11::arg("mem"));
+	cl_TeamGameEventWrapper.def(pybind11::init<TeamGameEventWrapper const &>(), pybind11::arg("other"));
+	// cl_TeamGameEventWrapper.def(pybind11::del<>());
+	cl_TeamGameEventWrapper.def("GetTeamArchetypes", [](TeamGameEventWrapper& cls_) { return cls_.GetTeamArchetypes(); });
+	cl_TeamGameEventWrapper.def("GetTeams", [](TeamGameEventWrapper& cls_) { return cls_.GetTeams(); });
+	cl_TeamGameEventWrapper.def("GetMaxTeamSize", [](TeamGameEventWrapper& cls_) { return cls_.GetMaxTeamSize(); });
+	cl_TeamGameEventWrapper.def("SetMaxTeamSize", [](TeamGameEventWrapper& cls_, int newMaxTeamSize) { return cls_.SetMaxTeamSize(newMaxTeamSize); }, pybind11::arg("newMaxTeamSize"));
+	cl_TeamGameEventWrapper.def("GetNumBots", [](TeamGameEventWrapper& cls_) { return cls_.GetNumBots(); });
+	cl_TeamGameEventWrapper.def("SetNumBots", [](TeamGameEventWrapper& cls_, int newNumBots) { return cls_.SetNumBots(newNumBots); }, pybind11::arg("newNumBots"));
+	cl_TeamGameEventWrapper.def("GetbMuteOppositeTeams", [](TeamGameEventWrapper& cls_) { return cls_.GetbMuteOppositeTeams(); });
+	cl_TeamGameEventWrapper.def("SetbMuteOppositeTeams", [](TeamGameEventWrapper& cls_, long unsigned int newbMuteOppositeTeams) { return cls_.SetbMuteOppositeTeams(newbMuteOppositeTeams); }, pybind11::arg("newbMuteOppositeTeams"));
+	cl_TeamGameEventWrapper.def("GetbDisableMutingOtherTeam", [](TeamGameEventWrapper& cls_) { return cls_.GetbDisableMutingOtherTeam(); });
+	cl_TeamGameEventWrapper.def("SetbDisableMutingOtherTeam", [](TeamGameEventWrapper& cls_, long unsigned int newbDisableMutingOtherTeam) { return cls_.SetbDisableMutingOtherTeam(newbDisableMutingOtherTeam); }, pybind11::arg("newbDisableMutingOtherTeam"));
+	cl_TeamGameEventWrapper.def("GetbForfeit", [](TeamGameEventWrapper& cls_) { return cls_.GetbForfeit(); });
+	cl_TeamGameEventWrapper.def("SetbForfeit", [](TeamGameEventWrapper& cls_, long unsigned int newbForfeit) { return cls_.SetbForfeit(newbForfeit); }, pybind11::arg("newbForfeit"));
+	cl_TeamGameEventWrapper.def("GetbUnfairTeams", [](TeamGameEventWrapper& cls_) { return cls_.GetbUnfairTeams(); });
+	cl_TeamGameEventWrapper.def("SetbUnfairTeams", [](TeamGameEventWrapper& cls_, long unsigned int newbUnfairTeams) { return cls_.SetbUnfairTeams(newbUnfairTeams); }, pybind11::arg("newbUnfairTeams"));
+	cl_TeamGameEventWrapper.def("GetbAlwaysAutoSelectTeam", [](TeamGameEventWrapper& cls_) { return cls_.GetbAlwaysAutoSelectTeam(); });
+	cl_TeamGameEventWrapper.def("SetbAlwaysAutoSelectTeam", [](TeamGameEventWrapper& cls_, long unsigned int newbAlwaysAutoSelectTeam) { return cls_.SetbAlwaysAutoSelectTeam(newbAlwaysAutoSelectTeam); }, pybind11::arg("newbAlwaysAutoSelectTeam"));
+	cl_TeamGameEventWrapper.def("StartRematchVote", [](TeamGameEventWrapper& cls_) { return cls_.StartRematchVote(); });
+	cl_TeamGameEventWrapper.def("CheckRematchVote", [](TeamGameEventWrapper& cls_) { return cls_.CheckRematchVote(); });
+	cl_TeamGameEventWrapper.def("__GameEvent_Team_TA__AllTeamsHaveHumans", [](TeamGameEventWrapper& cls_, TeamWrapper Team) { return cls_.__GameEvent_Team_TA__AllTeamsHaveHumans(Team); }, pybind11::arg("Team"));
+	cl_TeamGameEventWrapper.def("UpdatePlayerShortcuts", [](TeamGameEventWrapper& cls_) { return cls_.UpdatePlayerShortcuts(); });
+	cl_TeamGameEventWrapper.def("ClearTemporarySpawnSpots", [](TeamGameEventWrapper& cls_) { return cls_.ClearTemporarySpawnSpots(); });
+	cl_TeamGameEventWrapper.def("ChooseTeam", [](TeamGameEventWrapper& cls_, int TeamIndex, PlayerControllerWrapper Player) { return cls_.ChooseTeam(TeamIndex, Player); }, pybind11::arg("TeamIndex"), pybind11::arg("Player"));
+	cl_TeamGameEventWrapper.def("CanChangeTeam", [](TeamGameEventWrapper& cls_) { return cls_.CanChangeTeam(); });
+	cl_TeamGameEventWrapper.def("OnPenaltyChanged", [](TeamGameEventWrapper& cls_) { return cls_.OnPenaltyChanged(); });
+	cl_TeamGameEventWrapper.def("OnTeamForfeited", [](TeamGameEventWrapper& cls_, TeamWrapper Team) { return cls_.OnTeamForfeited(Team); }, pybind11::arg("Team"));
+	cl_TeamGameEventWrapper.def("HandleTeamForfeit", [](TeamGameEventWrapper& cls_, TeamWrapper Team) { return cls_.HandleTeamForfeit(Team); }, pybind11::arg("Team"));
+	cl_TeamGameEventWrapper.def("MuteOppositeTeams2", [](TeamGameEventWrapper& cls_, long unsigned int bMute) { return cls_.MuteOppositeTeams2(bMute); }, pybind11::arg("bMute"));
+	cl_TeamGameEventWrapper.def("UpdateBotCount", [](TeamGameEventWrapper& cls_) { return cls_.UpdateBotCount(); });
+	cl_TeamGameEventWrapper.def("FindBotReplacement", [](TeamGameEventWrapper& cls_, PriWrapper PRI) { return cls_.FindBotReplacement(PRI); }, pybind11::arg("PRI"));
+	cl_TeamGameEventWrapper.def("EndGame", [](TeamGameEventWrapper& cls_) { return cls_.EndGame(); });
+	cl_TeamGameEventWrapper.def("ForceNoContest", [](TeamGameEventWrapper& cls_) { return cls_.ForceNoContest(); });
+	cl_TeamGameEventWrapper.def("AddTemporarySpawnSpot", [](TeamGameEventWrapper& cls_, TeamWrapper Team, CarWrapper Car) { return cls_.AddTemporarySpawnSpot(Team, Car); }, pybind11::arg("Team"), pybind11::arg("Car"));
+	cl_TeamGameEventWrapper.def("HandleSelectedLoadout", [](TeamGameEventWrapper& cls_, PriWrapper PlayerPRI) { return cls_.HandleSelectedLoadout(PlayerPRI); }, pybind11::arg("PlayerPRI"));
+	cl_TeamGameEventWrapper.def("DestroyTeams", [](TeamGameEventWrapper& cls_) { return cls_.DestroyTeams(); });
+	cl_TeamGameEventWrapper.def("OnAllTeamsCreated", [](TeamGameEventWrapper& cls_) { return cls_.OnAllTeamsCreated(); });
+	cl_TeamGameEventWrapper.def("AssignCustomTeamSettings", [](TeamGameEventWrapper& cls_) { return cls_.AssignCustomTeamSettings(); });
+	cl_TeamGameEventWrapper.def("OnMatchSettingsChanged", [](TeamGameEventWrapper& cls_) { return cls_.OnMatchSettingsChanged(); });
+	cl_TeamGameEventWrapper.def("AllTeamsHaveHumans2", [](TeamGameEventWrapper& cls_) { return cls_.AllTeamsHaveHumans2(); });
+	cl_TeamGameEventWrapper.def("AllTeamsCreated2", [](TeamGameEventWrapper& cls_) { return cls_.AllTeamsCreated2(); });
+	cl_TeamGameEventWrapper.def("SetTeam", [](TeamGameEventWrapper& cls_, int TeamNum, TeamWrapper NewTeam) { return cls_.SetTeam(TeamNum, NewTeam); }, pybind11::arg("TeamNum"), pybind11::arg("NewTeam"));
+	cl_TeamGameEventWrapper.def("CreateTeams", [](TeamGameEventWrapper& cls_) { return cls_.CreateTeams(); });
+	cl_TeamGameEventWrapper.def("PreloadBots", [](TeamGameEventWrapper& cls_) { return cls_.PreloadBots(); });
+	cl_TeamGameEventWrapper.def("OnInit", [](TeamGameEventWrapper& cls_) { return cls_.OnInit(); });
+	cl_TeamGameEventWrapper.def("SetMaxTeamSize2", [](TeamGameEventWrapper& cls_, int MaxSize) { return cls_.SetMaxTeamSize2(MaxSize); }, pybind11::arg("MaxSize"));
+	cl_TeamGameEventWrapper.def("UpdateMaxTeamSize", [](TeamGameEventWrapper& cls_) { return cls_.UpdateMaxTeamSize(); });
+	cl_TeamGameEventWrapper.def("SetUnfairTeams", [](TeamGameEventWrapper& cls_, long unsigned int bUnfair) { return cls_.SetUnfairTeams(bUnfair); }, pybind11::arg("bUnfair"));
+	cl_TeamGameEventWrapper.def("InitBotSkill", [](TeamGameEventWrapper& cls_) { return cls_.InitBotSkill(); });
+	cl_TeamGameEventWrapper.def("eventInitGame", [](TeamGameEventWrapper& cls_, std::string Options) { return cls_.eventInitGame(Options); }, pybind11::arg("Options"));
+}

@@ -1,0 +1,11 @@
+AIControllerWrapper [class]
+public:
+    AIControllerWrapper::AIControllerWrapper(uintptr_t mem) [constructor]
+    AIControllerWrapper::AIControllerWrapper(AIControllerWrapper const & other) [constructor]
+    AIControllerWrapper & AIControllerWrapper::operator=(AIControllerWrapper rhs) [member operator]
+    AIControllerWrapper::~AIControllerWrapper() [destructor]
+    void AIControllerWrapper::DoNothing() [member function]
+private:
+    AIControllerWrapper::Impl [class declaration]
+    AIControllerWrapper::pimpl [variable]
+

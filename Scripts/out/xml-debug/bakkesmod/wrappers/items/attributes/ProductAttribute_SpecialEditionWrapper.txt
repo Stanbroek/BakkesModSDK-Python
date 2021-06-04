@@ -1,0 +1,13 @@
+ProductAttribute_SpecialEditionWrapper [class]
+public:
+    ProductAttribute_SpecialEditionWrapper::ProductAttribute_SpecialEditionWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_SpecialEditionWrapper::ProductAttribute_SpecialEditionWrapper(ProductAttribute_SpecialEditionWrapper const & other) [constructor]
+    ProductAttribute_SpecialEditionWrapper & ProductAttribute_SpecialEditionWrapper::operator=(ProductAttribute_SpecialEditionWrapper rhs) [member operator]
+    ProductAttribute_SpecialEditionWrapper::~ProductAttribute_SpecialEditionWrapper() [destructor]
+    int ProductAttribute_SpecialEditionWrapper::GetEditionID() [member function]
+    UnrealStringWrapper ProductAttribute_SpecialEditionWrapper::GetSortLabel() [member function]
+    int ProductAttribute_SpecialEditionWrapper::GetOverrideProductID(int ProductID) [member function]
+private:
+    ProductAttribute_SpecialEditionWrapper::Impl [class declaration]
+    ProductAttribute_SpecialEditionWrapper::pimpl [variable]
+

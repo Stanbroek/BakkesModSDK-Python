@@ -1,0 +1,11 @@
+HttpWrapper [class]
+public:
+    static void HttpWrapper::SendCurlRequest(CurlRequest request_data, CurlRequestDoneStringReturn on_complete) [member function]
+    static void HttpWrapper::SendCurlRequest(CurlRequest request_data, CurlRequestDoneBinaryReturn on_complete) [member function]
+    static void HttpWrapper::SendCurlRequest(CurlRequest request_data, std::wstring const & file_output, CurlRequestDoneFileReturn on_complete) [member function]
+    static void HttpWrapper::SendCurlJsonRequest(CurlRequest request_data, CurlRequestDoneStringReturn on_complete) [member function]
+    HttpWrapper::HttpWrapper() [constructor]
+    HttpWrapper::HttpWrapper(HttpWrapper const & arg0) [constructor]
+    HttpWrapper & HttpWrapper::operator=(HttpWrapper const & arg0) [member operator]
+    HttpWrapper::~HttpWrapper() [destructor]
+

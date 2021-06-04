@@ -1,0 +1,15 @@
+SettingsWrapper [class]
+public:
+    SettingsWrapper::SettingsWrapper() [constructor]
+    SettingsWrapper::~SettingsWrapper() [destructor]
+    ProfileCameraSettings SettingsWrapper::GetCameraSettings() [member function]
+    CameraSave SettingsWrapper::GetCameraSaveSettings() [member function]
+    std::map<std::basic_string<char>, std::basic_string<char>, std::less<std::basic_string<char> >, std::allocator<std::pair<const std::basic_string<char>, std::basic_string<char> > > > SettingsWrapper::GetPCBindings() [member function] [deprecated]
+    std::map<std::basic_string<char>, std::basic_string<char>, std::less<std::basic_string<char> >, std::allocator<std::pair<const std::basic_string<char>, std::basic_string<char> > > > SettingsWrapper::GetGamepadBindings() [member function] [deprecated]
+    std::vector<std::pair<std::basic_string<char>, std::basic_string<char> >, std::allocator<std::pair<std::basic_string<char>, std::basic_string<char> > > > SettingsWrapper::GetAllPCBindings() [member function]
+    std::vector<std::pair<std::basic_string<char>, std::basic_string<char> >, std::allocator<std::pair<std::basic_string<char>, std::basic_string<char> > > > SettingsWrapper::GetAllGamepadBindings() [member function]
+    GamepadSettings SettingsWrapper::GetGamepadSettings() [member function]
+    VideoSettings SettingsWrapper::GetVideoSettings() [member function]
+    SettingsWrapper::SettingsWrapper(SettingsWrapper const & arg0) [constructor]
+    SettingsWrapper & SettingsWrapper::operator=(SettingsWrapper const & arg0) [member operator]
+

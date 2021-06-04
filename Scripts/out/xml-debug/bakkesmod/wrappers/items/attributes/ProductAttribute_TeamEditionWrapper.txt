@@ -1,0 +1,12 @@
+ProductAttribute_TeamEditionWrapper [class]
+public:
+    ProductAttribute_TeamEditionWrapper::ProductAttribute_TeamEditionWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_TeamEditionWrapper::ProductAttribute_TeamEditionWrapper(ProductAttribute_TeamEditionWrapper const & other) [constructor]
+    ProductAttribute_TeamEditionWrapper & ProductAttribute_TeamEditionWrapper::operator=(ProductAttribute_TeamEditionWrapper rhs) [member operator]
+    ProductAttribute_TeamEditionWrapper::~ProductAttribute_TeamEditionWrapper() [destructor]
+    int ProductAttribute_TeamEditionWrapper::GetId() [member function]
+    UnrealStringWrapper ProductAttribute_TeamEditionWrapper::GetSortLabel() [member function]
+private:
+    ProductAttribute_TeamEditionWrapper::Impl [class declaration]
+    ProductAttribute_TeamEditionWrapper::pimpl [variable]
+

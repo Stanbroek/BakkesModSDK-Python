@@ -1,0 +1,15 @@
+BoostOverridePickup [class]
+public:
+    BoostOverridePickup::BoostOverridePickup(uintptr_t mem) [constructor]
+    BoostOverridePickup::BoostOverridePickup(BoostOverridePickup const & other) [constructor]
+    BoostOverridePickup & BoostOverridePickup::operator=(BoostOverridePickup rhs) [member operator]
+    BoostOverridePickup::~BoostOverridePickup() [destructor]
+    CarWrapper BoostOverridePickup::GetOtherCar() [member function]
+    void BoostOverridePickup::SetOtherCar(CarWrapper newOtherCar) [member function]
+    void BoostOverridePickup::PickupEnd() [member function]
+    void BoostOverridePickup::OnTargetChanged() [member function]
+    void BoostOverridePickup::PickupStart() [member function]
+private:
+    BoostOverridePickup::Impl [class declaration]
+    BoostOverridePickup::pimpl [variable]
+

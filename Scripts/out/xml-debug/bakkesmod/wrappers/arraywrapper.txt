@@ -1,0 +1,299 @@
+ArrayWrapper<ActorWrapper> [class]
+public:
+    ArrayWrapper<ActorWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<ActorWrapper>::ArrayWrapper(ArrayWrapper<ActorWrapper> const & other) [constructor]
+    ArrayWrapper<ActorWrapper> & ArrayWrapper<ActorWrapper>::operator=(ArrayWrapper<ActorWrapper> rhs) [member operator]
+    ArrayWrapper<ActorWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<ActorWrapper>::Count() [member function]
+    ActorWrapper ArrayWrapper<ActorWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<ActorWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<ActorWrapper>::Impl [class declaration]
+    ArrayWrapper<ActorWrapper>::pimpl [variable]
+
+ArrayWrapper<CarComponentWrapper> [class]
+public:
+    ArrayWrapper<CarComponentWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<CarComponentWrapper>::ArrayWrapper(ArrayWrapper<CarComponentWrapper> const & other) [constructor]
+    ArrayWrapper<CarComponentWrapper> & ArrayWrapper<CarComponentWrapper>::operator=(ArrayWrapper<CarComponentWrapper> rhs) [member operator]
+    ArrayWrapper<CarComponentWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<CarComponentWrapper>::Count() [member function]
+    CarComponentWrapper ArrayWrapper<CarComponentWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<CarComponentWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<CarComponentWrapper>::Impl [class declaration]
+    ArrayWrapper<CarComponentWrapper>::pimpl [variable]
+
+ArrayWrapper<PriWrapper> [class]
+public:
+    ArrayWrapper<PriWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<PriWrapper>::ArrayWrapper(ArrayWrapper<PriWrapper> const & other) [constructor]
+    ArrayWrapper<PriWrapper> & ArrayWrapper<PriWrapper>::operator=(ArrayWrapper<PriWrapper> rhs) [member operator]
+    ArrayWrapper<PriWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<PriWrapper>::Count() [member function]
+    PriWrapper ArrayWrapper<PriWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<PriWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<PriWrapper>::Impl [class declaration]
+    ArrayWrapper<PriWrapper>::pimpl [variable]
+
+ArrayWrapper<TeamWrapper> [class]
+public:
+    ArrayWrapper<TeamWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<TeamWrapper>::ArrayWrapper(ArrayWrapper<TeamWrapper> const & other) [constructor]
+    ArrayWrapper<TeamWrapper> & ArrayWrapper<TeamWrapper>::operator=(ArrayWrapper<TeamWrapper> rhs) [member operator]
+    ArrayWrapper<TeamWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<TeamWrapper>::Count() [member function]
+    TeamWrapper ArrayWrapper<TeamWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<TeamWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<TeamWrapper>::Impl [class declaration]
+    ArrayWrapper<TeamWrapper>::pimpl [variable]
+
+ArrayWrapper<CarWrapper> [class]
+public:
+    ArrayWrapper<CarWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<CarWrapper>::ArrayWrapper(ArrayWrapper<CarWrapper> const & other) [constructor]
+    ArrayWrapper<CarWrapper> & ArrayWrapper<CarWrapper>::operator=(ArrayWrapper<CarWrapper> rhs) [member operator]
+    ArrayWrapper<CarWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<CarWrapper>::Count() [member function]
+    CarWrapper ArrayWrapper<CarWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<CarWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<CarWrapper>::Impl [class declaration]
+    ArrayWrapper<CarWrapper>::pimpl [variable]
+
+ArrayWrapper<BallWrapper> [class]
+public:
+    ArrayWrapper<BallWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<BallWrapper>::ArrayWrapper(ArrayWrapper<BallWrapper> const & other) [constructor]
+    ArrayWrapper<BallWrapper> & ArrayWrapper<BallWrapper>::operator=(ArrayWrapper<BallWrapper> rhs) [member operator]
+    ArrayWrapper<BallWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<BallWrapper>::Count() [member function]
+    BallWrapper ArrayWrapper<BallWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<BallWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<BallWrapper>::Impl [class declaration]
+    ArrayWrapper<BallWrapper>::pimpl [variable]
+
+ArrayWrapper<WheelWrapper> [class]
+public:
+    ArrayWrapper<WheelWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<WheelWrapper>::ArrayWrapper(ArrayWrapper<WheelWrapper> const & other) [constructor]
+    ArrayWrapper<WheelWrapper> & ArrayWrapper<WheelWrapper>::operator=(ArrayWrapper<WheelWrapper> rhs) [member operator]
+    ArrayWrapper<WheelWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<WheelWrapper>::Count() [member function]
+    WheelWrapper ArrayWrapper<WheelWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<WheelWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<WheelWrapper>::Impl [class declaration]
+    ArrayWrapper<WheelWrapper>::pimpl [variable]
+
+ArrayWrapper<RBActorWrapper> [class]
+public:
+    ArrayWrapper<RBActorWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<RBActorWrapper>::ArrayWrapper(ArrayWrapper<RBActorWrapper> const & other) [constructor]
+    ArrayWrapper<RBActorWrapper> & ArrayWrapper<RBActorWrapper>::operator=(ArrayWrapper<RBActorWrapper> rhs) [member operator]
+    ArrayWrapper<RBActorWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<RBActorWrapper>::Count() [member function]
+    RBActorWrapper ArrayWrapper<RBActorWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<RBActorWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<RBActorWrapper>::Impl [class declaration]
+    ArrayWrapper<RBActorWrapper>::pimpl [variable]
+
+ArrayWrapper<GoalWrapper> [class]
+public:
+    ArrayWrapper<GoalWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<GoalWrapper>::ArrayWrapper(ArrayWrapper<GoalWrapper> const & other) [constructor]
+    ArrayWrapper<GoalWrapper> & ArrayWrapper<GoalWrapper>::operator=(ArrayWrapper<GoalWrapper> rhs) [member operator]
+    ArrayWrapper<GoalWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<GoalWrapper>::Count() [member function]
+    GoalWrapper ArrayWrapper<GoalWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<GoalWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<GoalWrapper>::Impl [class declaration]
+    ArrayWrapper<GoalWrapper>::pimpl [variable]
+
+ArrayWrapper<BoostPickupWrapper> [class]
+public:
+    ArrayWrapper<BoostPickupWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<BoostPickupWrapper>::ArrayWrapper(ArrayWrapper<BoostPickupWrapper> const & other) [constructor]
+    ArrayWrapper<BoostPickupWrapper> & ArrayWrapper<BoostPickupWrapper>::operator=(ArrayWrapper<BoostPickupWrapper> rhs) [member operator]
+    ArrayWrapper<BoostPickupWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<BoostPickupWrapper>::Count() [member function]
+    BoostPickupWrapper ArrayWrapper<BoostPickupWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<BoostPickupWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<BoostPickupWrapper>::Impl [class declaration]
+    ArrayWrapper<BoostPickupWrapper>::pimpl [variable]
+
+ArrayWrapper<SampleHistoryWrapper> [class]
+public:
+    ArrayWrapper<SampleHistoryWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<SampleHistoryWrapper>::ArrayWrapper(ArrayWrapper<SampleHistoryWrapper> const & other) [constructor]
+    ArrayWrapper<SampleHistoryWrapper> & ArrayWrapper<SampleHistoryWrapper>::operator=(ArrayWrapper<SampleHistoryWrapper> rhs) [member operator]
+    ArrayWrapper<SampleHistoryWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<SampleHistoryWrapper>::Count() [member function]
+    SampleHistoryWrapper ArrayWrapper<SampleHistoryWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<SampleHistoryWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<SampleHistoryWrapper>::Impl [class declaration]
+    ArrayWrapper<SampleHistoryWrapper>::pimpl [variable]
+
+ArrayWrapper<StatGraphWrapper> [class]
+public:
+    ArrayWrapper<StatGraphWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<StatGraphWrapper>::ArrayWrapper(ArrayWrapper<StatGraphWrapper> const & other) [constructor]
+    ArrayWrapper<StatGraphWrapper> & ArrayWrapper<StatGraphWrapper>::operator=(ArrayWrapper<StatGraphWrapper> rhs) [member operator]
+    ArrayWrapper<StatGraphWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<StatGraphWrapper>::Count() [member function]
+    StatGraphWrapper ArrayWrapper<StatGraphWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<StatGraphWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<StatGraphWrapper>::Impl [class declaration]
+    ArrayWrapper<StatGraphWrapper>::pimpl [variable]
+
+ArrayWrapper<ControllerWrapper> [class]
+public:
+    ArrayWrapper<ControllerWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<ControllerWrapper>::ArrayWrapper(ArrayWrapper<ControllerWrapper> const & other) [constructor]
+    ArrayWrapper<ControllerWrapper> & ArrayWrapper<ControllerWrapper>::operator=(ArrayWrapper<ControllerWrapper> rhs) [member operator]
+    ArrayWrapper<ControllerWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<ControllerWrapper>::Count() [member function]
+    ControllerWrapper ArrayWrapper<ControllerWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<ControllerWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<ControllerWrapper>::Impl [class declaration]
+    ArrayWrapper<ControllerWrapper>::pimpl [variable]
+
+ArrayWrapper<PlayerControllerWrapper> [class]
+public:
+    ArrayWrapper<PlayerControllerWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<PlayerControllerWrapper>::ArrayWrapper(ArrayWrapper<PlayerControllerWrapper> const & other) [constructor]
+    ArrayWrapper<PlayerControllerWrapper> & ArrayWrapper<PlayerControllerWrapper>::operator=(ArrayWrapper<PlayerControllerWrapper> rhs) [member operator]
+    ArrayWrapper<PlayerControllerWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<PlayerControllerWrapper>::Count() [member function]
+    PlayerControllerWrapper ArrayWrapper<PlayerControllerWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<PlayerControllerWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<PlayerControllerWrapper>::Impl [class declaration]
+    ArrayWrapper<PlayerControllerWrapper>::pimpl [variable]
+
+ArrayWrapper<wchar_t> [class]
+public:
+    ArrayWrapper<wchar_t>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<wchar_t>::ArrayWrapper(ArrayWrapper<wchar_t> const & other) [constructor]
+    ArrayWrapper<wchar_t> & ArrayWrapper<wchar_t>::operator=(ArrayWrapper<wchar_t> rhs) [member operator]
+    ArrayWrapper<wchar_t>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<wchar_t>::Count() [member function]
+    wchar_t ArrayWrapper<wchar_t>::Get(int index) [member function]
+    bool ArrayWrapper<wchar_t>::IsNull() [member function]
+protected:
+    ArrayWrapper<wchar_t>::Impl [class declaration]
+    ArrayWrapper<wchar_t>::pimpl [variable]
+
+ArrayWrapper<SequenceWrapper> [class]
+public:
+    ArrayWrapper<SequenceWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<SequenceWrapper>::ArrayWrapper(ArrayWrapper<SequenceWrapper> const & other) [constructor]
+    ArrayWrapper<SequenceWrapper> & ArrayWrapper<SequenceWrapper>::operator=(ArrayWrapper<SequenceWrapper> rhs) [member operator]
+    ArrayWrapper<SequenceWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<SequenceWrapper>::Count() [member function]
+    SequenceWrapper ArrayWrapper<SequenceWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<SequenceWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<SequenceWrapper>::Impl [class declaration]
+    ArrayWrapper<SequenceWrapper>::pimpl [variable]
+
+ArrayWrapper<SequenceObjectWrapper> [class]
+public:
+    ArrayWrapper<SequenceObjectWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<SequenceObjectWrapper>::ArrayWrapper(ArrayWrapper<SequenceObjectWrapper> const & other) [constructor]
+    ArrayWrapper<SequenceObjectWrapper> & ArrayWrapper<SequenceObjectWrapper>::operator=(ArrayWrapper<SequenceObjectWrapper> rhs) [member operator]
+    ArrayWrapper<SequenceObjectWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<SequenceObjectWrapper>::Count() [member function]
+    SequenceObjectWrapper ArrayWrapper<SequenceObjectWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<SequenceObjectWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<SequenceObjectWrapper>::Impl [class declaration]
+    ArrayWrapper<SequenceObjectWrapper>::pimpl [variable]
+
+ArrayWrapper<SequenceVariableWrapper> [class]
+public:
+    ArrayWrapper<SequenceVariableWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<SequenceVariableWrapper>::ArrayWrapper(ArrayWrapper<SequenceVariableWrapper> const & other) [constructor]
+    ArrayWrapper<SequenceVariableWrapper> & ArrayWrapper<SequenceVariableWrapper>::operator=(ArrayWrapper<SequenceVariableWrapper> rhs) [member operator]
+    ArrayWrapper<SequenceVariableWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<SequenceVariableWrapper>::Count() [member function]
+    SequenceVariableWrapper ArrayWrapper<SequenceVariableWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<SequenceVariableWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<SequenceVariableWrapper>::Impl [class declaration]
+    ArrayWrapper<SequenceVariableWrapper>::pimpl [variable]
+
+ArrayWrapper<ProductWrapper> [class]
+public:
+    ArrayWrapper<ProductWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<ProductWrapper>::ArrayWrapper(ArrayWrapper<ProductWrapper> const & other) [constructor]
+    ArrayWrapper<ProductWrapper> & ArrayWrapper<ProductWrapper>::operator=(ArrayWrapper<ProductWrapper> rhs) [member operator]
+    ArrayWrapper<ProductWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<ProductWrapper>::Count() [member function]
+    ProductWrapper ArrayWrapper<ProductWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<ProductWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<ProductWrapper>::Impl [class declaration]
+    ArrayWrapper<ProductWrapper>::pimpl [variable]
+
+ArrayWrapper<OnlineProductWrapper> [class]
+public:
+    ArrayWrapper<OnlineProductWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<OnlineProductWrapper>::ArrayWrapper(ArrayWrapper<OnlineProductWrapper> const & other) [constructor]
+    ArrayWrapper<OnlineProductWrapper> & ArrayWrapper<OnlineProductWrapper>::operator=(ArrayWrapper<OnlineProductWrapper> rhs) [member operator]
+    ArrayWrapper<OnlineProductWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<OnlineProductWrapper>::Count() [member function]
+    OnlineProductWrapper ArrayWrapper<OnlineProductWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<OnlineProductWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<OnlineProductWrapper>::Impl [class declaration]
+    ArrayWrapper<OnlineProductWrapper>::pimpl [variable]
+
+ArrayWrapper<ProductAttributeWrapper> [class]
+public:
+    ArrayWrapper<ProductAttributeWrapper>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<ProductAttributeWrapper>::ArrayWrapper(ArrayWrapper<ProductAttributeWrapper> const & other) [constructor]
+    ArrayWrapper<ProductAttributeWrapper> & ArrayWrapper<ProductAttributeWrapper>::operator=(ArrayWrapper<ProductAttributeWrapper> rhs) [member operator]
+    ArrayWrapper<ProductAttributeWrapper>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<ProductAttributeWrapper>::Count() [member function]
+    ProductAttributeWrapper ArrayWrapper<ProductAttributeWrapper>::Get(int index) [member function]
+    bool ArrayWrapper<ProductAttributeWrapper>::IsNull() [member function]
+protected:
+    ArrayWrapper<ProductAttributeWrapper>::Impl [class declaration]
+    ArrayWrapper<ProductAttributeWrapper>::pimpl [variable]
+
+ArrayWrapper<int> [class]
+public:
+    ArrayWrapper<int>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<int>::ArrayWrapper(ArrayWrapper<int> const & other) [constructor]
+    ArrayWrapper<int> & ArrayWrapper<int>::operator=(ArrayWrapper<int> rhs) [member operator]
+    ArrayWrapper<int>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<int>::Count() [member function]
+    int ArrayWrapper<int>::Get(int index) [member function]
+    bool ArrayWrapper<int>::IsNull() [member function]
+protected:
+    ArrayWrapper<int>::Impl [class declaration]
+    ArrayWrapper<int>::pimpl [variable]
+
+ArrayWrapper<unsigned long long> [class]
+public:
+    ArrayWrapper<unsigned long long>::ArrayWrapper(uintptr_t mem) [constructor]
+    ArrayWrapper<unsigned long long>::ArrayWrapper(ArrayWrapper<unsigned long long> const & other) [constructor]
+    ArrayWrapper<unsigned long long> & ArrayWrapper<unsigned long long>::operator=(ArrayWrapper<unsigned long long> rhs) [member operator]
+    ArrayWrapper<unsigned long long>::~ArrayWrapper() [destructor]
+    int ArrayWrapper<unsigned long long>::Count() [member function]
+    long long unsigned int ArrayWrapper<unsigned long long>::Get(int index) [member function]
+    bool ArrayWrapper<unsigned long long>::IsNull() [member function]
+protected:
+    ArrayWrapper<unsigned long long>::Impl [class declaration]
+    ArrayWrapper<unsigned long long>::pimpl [variable]
+

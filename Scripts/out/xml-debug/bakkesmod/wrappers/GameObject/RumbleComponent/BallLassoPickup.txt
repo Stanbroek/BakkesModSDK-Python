@@ -1,0 +1,12 @@
+BallLassoPickup [class]
+public:
+    BallLassoPickup::BallLassoPickup(uintptr_t mem) [constructor]
+    BallLassoPickup::BallLassoPickup(BallLassoPickup const & other) [constructor]
+    BallLassoPickup & BallLassoPickup::operator=(BallLassoPickup rhs) [member operator]
+    BallLassoPickup::~BallLassoPickup() [destructor]
+    void BallLassoPickup::ScaleSpringMeshToLocation(Vector & NewLocation, Vector & TargetLocation) [member function]
+    void BallLassoPickup::DoSpring(long unsigned int bFirstHit) [member function]
+private:
+    BallLassoPickup::Impl [class declaration]
+    BallLassoPickup::pimpl [variable]
+

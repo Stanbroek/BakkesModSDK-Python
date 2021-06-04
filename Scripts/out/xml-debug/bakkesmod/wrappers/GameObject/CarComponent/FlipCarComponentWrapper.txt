@@ -1,0 +1,22 @@
+FlipCarComponentWrapper [class]
+public:
+    FlipCarComponentWrapper::FlipCarComponentWrapper(uintptr_t mem) [constructor]
+    FlipCarComponentWrapper::FlipCarComponentWrapper(FlipCarComponentWrapper const & other) [constructor]
+    FlipCarComponentWrapper & FlipCarComponentWrapper::operator=(FlipCarComponentWrapper rhs) [member operator]
+    FlipCarComponentWrapper::~FlipCarComponentWrapper() [destructor]
+    float FlipCarComponentWrapper::GetFlipCarImpulse() [member function]
+    void FlipCarComponentWrapper::SetFlipCarImpulse(float newFlipCarImpulse) [member function]
+    float FlipCarComponentWrapper::GetFlipCarTorque() [member function]
+    void FlipCarComponentWrapper::SetFlipCarTorque(float newFlipCarTorque) [member function]
+    float FlipCarComponentWrapper::GetFlipCarTime() [member function]
+    void FlipCarComponentWrapper::SetFlipCarTime(float newFlipCarTime) [member function]
+    long unsigned int FlipCarComponentWrapper::GetbFlipRight() [member function]
+    void FlipCarComponentWrapper::SetbFlipRight(long unsigned int newbFlipRight) [member function]
+    void FlipCarComponentWrapper::InitFlip() [member function]
+    void FlipCarComponentWrapper::ApplyForces(float ActiveTime) [member function]
+    bool FlipCarComponentWrapper::CanActivate() [member function]
+    void FlipCarComponentWrapper::OnCreated() [member function]
+private:
+    FlipCarComponentWrapper::Impl [class declaration]
+    FlipCarComponentWrapper::pimpl [variable]
+

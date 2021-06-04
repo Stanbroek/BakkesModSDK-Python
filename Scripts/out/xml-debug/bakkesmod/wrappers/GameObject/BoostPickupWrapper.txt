@@ -1,0 +1,17 @@
+BoostPickupWrapper [class]
+public:
+    BoostPickupWrapper::BoostPickupWrapper(uintptr_t mem) [constructor]
+    BoostPickupWrapper::BoostPickupWrapper(BoostPickupWrapper const & other) [constructor]
+    BoostPickupWrapper & BoostPickupWrapper::operator=(BoostPickupWrapper rhs) [member operator]
+    BoostPickupWrapper::~BoostPickupWrapper() [destructor]
+    float BoostPickupWrapper::GetBoostAmount() [member function]
+    void BoostPickupWrapper::SetBoostAmount(float newBoostAmount) [member function]
+    unsigned char BoostPickupWrapper::GetBoostType() [member function]
+    void BoostPickupWrapper::SetBoostType(unsigned char newBoostType) [member function]
+    void BoostPickupWrapper::PlayPickedUpFX() [member function]
+    void BoostPickupWrapper::Pickup2(CarWrapper Car) [member function]
+    bool BoostPickupWrapper::CanPickup(CarWrapper Car) [member function]
+private:
+    BoostPickupWrapper::Impl [class declaration]
+    BoostPickupWrapper::pimpl [variable]
+

@@ -1,0 +1,14 @@
+SpecialEditionDatabaseWrapper [class]
+public:
+    SpecialEditionDatabaseWrapper::SpecialEditionDatabaseWrapper(uintptr_t mem) [constructor]
+    SpecialEditionDatabaseWrapper::SpecialEditionDatabaseWrapper(SpecialEditionDatabaseWrapper const & other) [constructor]
+    SpecialEditionDatabaseWrapper & SpecialEditionDatabaseWrapper::operator=(SpecialEditionDatabaseWrapper rhs) [member operator]
+    SpecialEditionDatabaseWrapper::~SpecialEditionDatabaseWrapper() [destructor]
+    bool SpecialEditionDatabaseWrapper::IsNull() const [member function]
+    bool SpecialEditionDatabaseWrapper::operator bool() const [casting operator]
+    std::string SpecialEditionDatabaseWrapper::GetSpecialEditionName(int EditionID) [member function]
+    int SpecialEditionDatabaseWrapper::GetSpecialEditionId(std::string & EditionName) [member function]
+private:
+    SpecialEditionDatabaseWrapper::Impl [class declaration]
+    SpecialEditionDatabaseWrapper::pimpl [variable]
+

@@ -1,0 +1,60 @@
+StructArrayWrapper<LinearColor> [class]
+public:
+    StructArrayWrapper<LinearColor>::StructArrayWrapper(uintptr_t mem) [constructor]
+    StructArrayWrapper<LinearColor>::StructArrayWrapper(StructArrayWrapper<LinearColor> const & other) [constructor]
+    StructArrayWrapper<LinearColor> & StructArrayWrapper<LinearColor>::operator=(StructArrayWrapper<LinearColor> rhs) [member operator]
+    StructArrayWrapper<LinearColor>::~StructArrayWrapper() [destructor]
+    int StructArrayWrapper<LinearColor>::Count() [member function]
+    LinearColor StructArrayWrapper<LinearColor>::Get(int index) [member function]
+protected:
+    StructArrayWrapper<LinearColor>::Impl [class declaration]
+    StructArrayWrapper<LinearColor>::pimpl [variable]
+
+StructArrayWrapper<SteamID> [class]
+public:
+    StructArrayWrapper<SteamID>::StructArrayWrapper(uintptr_t mem) [constructor]
+    StructArrayWrapper<SteamID>::StructArrayWrapper(StructArrayWrapper<SteamID> const & other) [constructor]
+    StructArrayWrapper<SteamID> & StructArrayWrapper<SteamID>::operator=(StructArrayWrapper<SteamID> rhs) [member operator]
+    StructArrayWrapper<SteamID>::~StructArrayWrapper() [destructor]
+    int StructArrayWrapper<SteamID>::Count() [member function]
+    SteamID StructArrayWrapper<SteamID>::Get(int index) [member function]
+protected:
+    StructArrayWrapper<SteamID>::Impl [class declaration]
+    StructArrayWrapper<SteamID>::pimpl [variable]
+
+StructArrayWrapper<ProfileCameraSettings> [class]
+public:
+    StructArrayWrapper<ProfileCameraSettings>::StructArrayWrapper(uintptr_t mem) [constructor]
+    StructArrayWrapper<ProfileCameraSettings>::StructArrayWrapper(StructArrayWrapper<ProfileCameraSettings> const & other) [constructor]
+    StructArrayWrapper<ProfileCameraSettings> & StructArrayWrapper<ProfileCameraSettings>::operator=(StructArrayWrapper<ProfileCameraSettings> rhs) [member operator]
+    StructArrayWrapper<ProfileCameraSettings>::~StructArrayWrapper() [destructor]
+    int StructArrayWrapper<ProfileCameraSettings>::Count() [member function]
+    ProfileCameraSettings StructArrayWrapper<ProfileCameraSettings>::Get(int index) [member function]
+protected:
+    StructArrayWrapper<ProfileCameraSettings>::Impl [class declaration]
+    StructArrayWrapper<ProfileCameraSettings>::pimpl [variable]
+
+StructArrayWrapper<RecordedSample> [class]
+public:
+    StructArrayWrapper<RecordedSample>::StructArrayWrapper(uintptr_t mem) [constructor]
+    StructArrayWrapper<RecordedSample>::StructArrayWrapper(StructArrayWrapper<RecordedSample> const & other) [constructor]
+    StructArrayWrapper<RecordedSample> & StructArrayWrapper<RecordedSample>::operator=(StructArrayWrapper<RecordedSample> rhs) [member operator]
+    StructArrayWrapper<RecordedSample>::~StructArrayWrapper() [destructor]
+    int StructArrayWrapper<RecordedSample>::Count() [member function]
+    RecordedSample StructArrayWrapper<RecordedSample>::Get(int index) [member function]
+protected:
+    StructArrayWrapper<RecordedSample>::Impl [class declaration]
+    StructArrayWrapper<RecordedSample>::pimpl [variable]
+
+StructArrayWrapper<ClubMember> [class]
+public:
+    StructArrayWrapper<ClubMember>::StructArrayWrapper(uintptr_t mem) [constructor]
+    StructArrayWrapper<ClubMember>::StructArrayWrapper(StructArrayWrapper<ClubMember> const & other) [constructor]
+    StructArrayWrapper<ClubMember> & StructArrayWrapper<ClubMember>::operator=(StructArrayWrapper<ClubMember> rhs) [member operator]
+    StructArrayWrapper<ClubMember>::~StructArrayWrapper() [destructor]
+    int StructArrayWrapper<ClubMember>::Count() [member function]
+    ClubMember StructArrayWrapper<ClubMember>::Get(int index) [member function]
+protected:
+    StructArrayWrapper<ClubMember>::Impl [class declaration]
+    StructArrayWrapper<ClubMember>::pimpl [variable]
+

@@ -1,0 +1,14 @@
+HandbrakeOverridePickup [class]
+public:
+    HandbrakeOverridePickup::HandbrakeOverridePickup(uintptr_t mem) [constructor]
+    HandbrakeOverridePickup::HandbrakeOverridePickup(HandbrakeOverridePickup const & other) [constructor]
+    HandbrakeOverridePickup & HandbrakeOverridePickup::operator=(HandbrakeOverridePickup rhs) [member operator]
+    HandbrakeOverridePickup::~HandbrakeOverridePickup() [destructor]
+    CarWrapper HandbrakeOverridePickup::GetOtherCar() [member function]
+    void HandbrakeOverridePickup::SetOtherCar(CarWrapper newOtherCar) [member function]
+    void HandbrakeOverridePickup::PickupEnd() [member function]
+    void HandbrakeOverridePickup::PickupStart() [member function]
+private:
+    HandbrakeOverridePickup::Impl [class declaration]
+    HandbrakeOverridePickup::pimpl [variable]
+

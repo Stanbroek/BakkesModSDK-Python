@@ -1,0 +1,58 @@
+void bind_GoalWrapper(pybind11::module& m)
+{
+
+	pybind11::class_<GoalWrapper, std::shared_ptr<GoalWrapper>, ObjectWrapper> cl_GoalWrapper(m, "GoalWrapper");
+	cl_GoalWrapper.def(pybind11::init<uintptr_t>(), pybind11::arg("mem"));
+	cl_GoalWrapper.def(pybind11::init<GoalWrapper const &>(), pybind11::arg("other"));
+	// cl_GoalWrapper.def(pybind11::del<>());
+	cl_GoalWrapper.def("IsNull", [](GoalWrapper& cls_) { return cls_.IsNull(); });
+	cl_GoalWrapper.def("GetGoalOrientation", [](GoalWrapper& cls_) { return cls_.GetGoalOrientation(); });
+	cl_GoalWrapper.def("SetGoalOrientation", [](GoalWrapper& cls_, ActorWrapper newGoalOrientation) { return cls_.SetGoalOrientation(newGoalOrientation); }, pybind11::arg("newGoalOrientation"));
+	cl_GoalWrapper.def("GetOverrideGoalIndicatorOrientations", [](GoalWrapper& cls_) { return cls_.GetOverrideGoalIndicatorOrientations(); });
+	cl_GoalWrapper.def("GetTeamNum", [](GoalWrapper& cls_) { return cls_.GetTeamNum(); });
+	cl_GoalWrapper.def("SetTeamNum", [](GoalWrapper& cls_, unsigned char newTeamNum) { return cls_.SetTeamNum(newTeamNum); }, pybind11::arg("newTeamNum"));
+	cl_GoalWrapper.def("GetScoreFX", [](GoalWrapper& cls_) { return cls_.GetScoreFX(); });
+	cl_GoalWrapper.def("SetScoreFX", [](GoalWrapper& cls_, FXActorWrapper newScoreFX) { return cls_.SetScoreFX(newScoreFX); }, pybind11::arg("newScoreFX"));
+	cl_GoalWrapper.def("GetGoalIndicatorArchetype", [](GoalWrapper& cls_) { return cls_.GetGoalIndicatorArchetype(); });
+	cl_GoalWrapper.def("GetbNoGoalIndicator", [](GoalWrapper& cls_) { return cls_.GetbNoGoalIndicator(); });
+	cl_GoalWrapper.def("SetbNoGoalIndicator", [](GoalWrapper& cls_, long unsigned int newbNoGoalIndicator) { return cls_.SetbNoGoalIndicator(newbNoGoalIndicator); }, pybind11::arg("newbNoGoalIndicator"));
+	cl_GoalWrapper.def("GetbOnlyGoalsFromDirection", [](GoalWrapper& cls_) { return cls_.GetbOnlyGoalsFromDirection(); });
+	cl_GoalWrapper.def("SetbOnlyGoalsFromDirection", [](GoalWrapper& cls_, long unsigned int newbOnlyGoalsFromDirection) { return cls_.SetbOnlyGoalsFromDirection(newbOnlyGoalsFromDirection); }, pybind11::arg("newbOnlyGoalsFromDirection"));
+	cl_GoalWrapper.def("GetbShowFocusExtent", [](GoalWrapper& cls_) { return cls_.GetbShowFocusExtent(); });
+	cl_GoalWrapper.def("SetbShowFocusExtent", [](GoalWrapper& cls_, long unsigned int newbShowFocusExtent) { return cls_.SetbShowFocusExtent(newbShowFocusExtent); }, pybind11::arg("newbShowFocusExtent"));
+	cl_GoalWrapper.def("GetGoalDirection", [](GoalWrapper& cls_) { return cls_.GetGoalDirection(); });
+	cl_GoalWrapper.def("SetGoalDirection", [](GoalWrapper& cls_, ActorWrapper newGoalDirection) { return cls_.SetGoalDirection(newGoalDirection); }, pybind11::arg("newGoalDirection"));
+	cl_GoalWrapper.def("GetPointsToAward", [](GoalWrapper& cls_) { return cls_.GetPointsToAward(); });
+	cl_GoalWrapper.def("SetPointsToAward", [](GoalWrapper& cls_, int newPointsToAward) { return cls_.SetPointsToAward(newPointsToAward); }, pybind11::arg("newPointsToAward"));
+	cl_GoalWrapper.def("GetAutoCamFocusExtent", [](GoalWrapper& cls_) { return cls_.GetAutoCamFocusExtent(); });
+	cl_GoalWrapper.def("SetAutoCamFocusExtent", [](GoalWrapper& cls_, Vector newAutoCamFocusExtent) { return cls_.SetAutoCamFocusExtent(newAutoCamFocusExtent); }, pybind11::arg("newAutoCamFocusExtent"));
+	cl_GoalWrapper.def("GetGoalFocusLocationOffset", [](GoalWrapper& cls_) { return cls_.GetGoalFocusLocationOffset(); });
+	cl_GoalWrapper.def("SetGoalFocusLocationOffset", [](GoalWrapper& cls_, Vector newGoalFocusLocationOffset) { return cls_.SetGoalFocusLocationOffset(newGoalFocusLocationOffset); }, pybind11::arg("newGoalFocusLocationOffset"));
+	cl_GoalWrapper.def("GetMaxGoalScorerAttachRadius", [](GoalWrapper& cls_) { return cls_.GetMaxGoalScorerAttachRadius(); });
+	cl_GoalWrapper.def("SetMaxGoalScorerAttachRadius", [](GoalWrapper& cls_, float newMaxGoalScorerAttachRadius) { return cls_.SetMaxGoalScorerAttachRadius(newMaxGoalScorerAttachRadius); }, pybind11::arg("newMaxGoalScorerAttachRadius"));
+	cl_GoalWrapper.def("GetGoalScoredDotDirection", [](GoalWrapper& cls_) { return cls_.GetGoalScoredDotDirection(); });
+	cl_GoalWrapper.def("SetGoalScoredDotDirection", [](GoalWrapper& cls_, Vector newGoalScoredDotDirection) { return cls_.SetGoalScoredDotDirection(newGoalScoredDotDirection); }, pybind11::arg("newGoalScoredDotDirection"));
+	cl_GoalWrapper.def("GetMinAttachGoalToScorerDot", [](GoalWrapper& cls_) { return cls_.GetMinAttachGoalToScorerDot(); });
+	cl_GoalWrapper.def("SetMinAttachGoalToScorerDot", [](GoalWrapper& cls_, float newMinAttachGoalToScorerDot) { return cls_.SetMinAttachGoalToScorerDot(newMinAttachGoalToScorerDot); }, pybind11::arg("newMinAttachGoalToScorerDot"));
+	cl_GoalWrapper.def("GetLocation", [](GoalWrapper& cls_) { return cls_.GetLocation(); });
+	cl_GoalWrapper.def("SetLocation", [](GoalWrapper& cls_, Vector newLocation) { return cls_.SetLocation(newLocation); }, pybind11::arg("newLocation"));
+	cl_GoalWrapper.def("GetDirection", [](GoalWrapper& cls_) { return cls_.GetDirection(); });
+	cl_GoalWrapper.def("SetDirection", [](GoalWrapper& cls_, Vector newDirection) { return cls_.SetDirection(newDirection); }, pybind11::arg("newDirection"));
+	cl_GoalWrapper.def("GetRight", [](GoalWrapper& cls_) { return cls_.GetRight(); });
+	cl_GoalWrapper.def("SetRight", [](GoalWrapper& cls_, Vector newRight) { return cls_.SetRight(newRight); }, pybind11::arg("newRight"));
+	cl_GoalWrapper.def("GetUp", [](GoalWrapper& cls_) { return cls_.GetUp(); });
+	cl_GoalWrapper.def("SetUp", [](GoalWrapper& cls_, Vector newUp) { return cls_.SetUp(newUp); }, pybind11::arg("newUp"));
+	cl_GoalWrapper.def("GetRotation", [](GoalWrapper& cls_) { return cls_.GetRotation(); });
+	cl_GoalWrapper.def("SetRotation", [](GoalWrapper& cls_, Rotator newRotation) { return cls_.SetRotation(newRotation); }, pybind11::arg("newRotation"));
+	cl_GoalWrapper.def("GetLocalExtent", [](GoalWrapper& cls_) { return cls_.GetLocalExtent(); });
+	cl_GoalWrapper.def("SetLocalExtent", [](GoalWrapper& cls_, Vector newLocalExtent) { return cls_.SetLocalExtent(newLocalExtent); }, pybind11::arg("newLocalExtent"));
+	cl_GoalWrapper.def("GetWorldCenter", [](GoalWrapper& cls_) { return cls_.GetWorldCenter(); });
+	cl_GoalWrapper.def("SetWorldCenter", [](GoalWrapper& cls_, Vector newWorldCenter) { return cls_.SetWorldCenter(newWorldCenter); }, pybind11::arg("newWorldCenter"));
+	cl_GoalWrapper.def("GetWorldExtent", [](GoalWrapper& cls_) { return cls_.GetWorldExtent(); });
+	cl_GoalWrapper.def("SetWorldExtent", [](GoalWrapper& cls_, Vector newWorldExtent) { return cls_.SetWorldExtent(newWorldExtent); }, pybind11::arg("newWorldExtent"));
+	cl_GoalWrapper.def("GetWorldFrontCenter", [](GoalWrapper& cls_) { return cls_.GetWorldFrontCenter(); });
+	cl_GoalWrapper.def("SetWorldFrontCenter", [](GoalWrapper& cls_, Vector newWorldFrontCenter) { return cls_.SetWorldFrontCenter(newWorldFrontCenter); }, pybind11::arg("newWorldFrontCenter"));
+	cl_GoalWrapper.def("GetGoalFocusExtentCenter", [](GoalWrapper& cls_) { return cls_.GetGoalFocusExtentCenter(); });
+	cl_GoalWrapper.def("Init", [](GoalWrapper& cls_) { return cls_.Init(); });
+	cl_GoalWrapper.def("eventBeginPlay", [](GoalWrapper& cls_) { return cls_.eventBeginPlay(); });
+}

@@ -1,0 +1,28 @@
+ClubDetailsWrapper [class]
+public:
+    ClubDetailsWrapper::ClubDetailsWrapper(uintptr_t mem) [constructor]
+    ClubDetailsWrapper::ClubDetailsWrapper(ClubDetailsWrapper const & other) [constructor]
+    ClubDetailsWrapper & ClubDetailsWrapper::operator=(ClubDetailsWrapper rhs) [member operator]
+    ClubDetailsWrapper::~ClubDetailsWrapper() [destructor]
+    long long unsigned int ClubDetailsWrapper::GetClubID() [member function]
+    SteamID ClubDetailsWrapper::GetOwnerPlayerID() [member function] [deprecated]
+    UniqueIDWrapper ClubDetailsWrapper::GetOwnerPlayerUniqueID() [member function]
+    UnrealStringWrapper ClubDetailsWrapper::GetMotD() [member function]
+    long unsigned int ClubDetailsWrapper::GetbVerified() [member function]
+    long long unsigned int ClubDetailsWrapper::GetLastUpdatedTime() [member function]
+    StructArrayWrapper<ClubMember> ClubDetailsWrapper::GetMembers() [member function]
+private:
+    ClubDetailsWrapper::Impl [class declaration]
+    ClubDetailsWrapper::pimpl [variable]
+
+ClubMember [struct]
+public:
+    ClubMember::paddingForReasons [variable]
+    SteamID ClubMember::GetSteamId() [member function] [deprecated]
+    UniqueIDWrapper ClubMember::GetUniqueID() [member function]
+    UnrealStringWrapper ClubMember::GetName() [member function]
+    ClubMember::ClubMember() [constructor]
+    ClubMember::ClubMember(ClubMember const & arg0) [constructor]
+    ClubMember & ClubMember::operator=(ClubMember const & arg0) [member operator]
+    ClubMember::~ClubMember() [destructor]
+

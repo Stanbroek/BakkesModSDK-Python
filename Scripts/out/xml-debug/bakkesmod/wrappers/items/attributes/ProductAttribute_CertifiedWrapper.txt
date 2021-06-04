@@ -1,0 +1,17 @@
+ProductAttribute_CertifiedWrapper [class]
+public:
+    ProductAttribute_CertifiedWrapper::ProductAttribute_CertifiedWrapper(uintptr_t mem) [constructor]
+    ProductAttribute_CertifiedWrapper::ProductAttribute_CertifiedWrapper(ProductAttribute_CertifiedWrapper const & other) [constructor]
+    ProductAttribute_CertifiedWrapper & ProductAttribute_CertifiedWrapper::operator=(ProductAttribute_CertifiedWrapper rhs) [member operator]
+    ProductAttribute_CertifiedWrapper::~ProductAttribute_CertifiedWrapper() [destructor]
+    std::string ProductAttribute_CertifiedWrapper::GetValueKeyName() [member function]
+    int ProductAttribute_CertifiedWrapper::GetStatId() [member function]
+    int ProductAttribute_CertifiedWrapper::GetStatValue() [member function]
+    UnrealStringWrapper ProductAttribute_CertifiedWrapper::GetSortLabel() [member function]
+    UnrealStringWrapper ProductAttribute_CertifiedWrapper::GetDescription() [member function]
+    UnrealStringWrapper ProductAttribute_CertifiedWrapper::GetRankLabel() [member function]
+    int ProductAttribute_CertifiedWrapper::GetRank() [member function]
+private:
+    ProductAttribute_CertifiedWrapper::Impl [class declaration]
+    ProductAttribute_CertifiedWrapper::pimpl [variable]
+

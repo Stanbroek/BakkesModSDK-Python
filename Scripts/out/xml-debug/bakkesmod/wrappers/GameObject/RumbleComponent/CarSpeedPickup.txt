@@ -1,0 +1,18 @@
+CarSpeedPickup [class]
+public:
+    CarSpeedPickup::CarSpeedPickup(uintptr_t mem) [constructor]
+    CarSpeedPickup::CarSpeedPickup(CarSpeedPickup const & other) [constructor]
+    CarSpeedPickup & CarSpeedPickup::operator=(CarSpeedPickup rhs) [member operator]
+    CarSpeedPickup::~CarSpeedPickup() [destructor]
+    float CarSpeedPickup::GetGravityScale() [member function]
+    void CarSpeedPickup::SetGravityScale(float newGravityScale) [member function]
+    Vector CarSpeedPickup::GetAddedForce() [member function]
+    void CarSpeedPickup::SetAddedForce(Vector newAddedForce) [member function]
+    float CarSpeedPickup::GetOrigGravityScale() [member function]
+    void CarSpeedPickup::SetOrigGravityScale(float newOrigGravityScale) [member function]
+    void CarSpeedPickup::PickupEnd() [member function]
+    void CarSpeedPickup::PickupStart() [member function]
+private:
+    CarSpeedPickup::Impl [class declaration]
+    CarSpeedPickup::pimpl [variable]
+

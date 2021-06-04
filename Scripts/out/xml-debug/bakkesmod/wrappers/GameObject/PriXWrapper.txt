@@ -1,0 +1,23 @@
+PriXWrapper [class]
+public:
+    PriXWrapper::PriXWrapper(uintptr_t mem) [constructor]
+    PriXWrapper::PriXWrapper(PriXWrapper const & other) [constructor]
+    PriXWrapper & PriXWrapper::operator=(PriXWrapper rhs) [member operator]
+    PriXWrapper::~PriXWrapper() [destructor]
+    void PriXWrapper::eventDestroyed() [member function]
+    void PriXWrapper::OnUniqueIdChanged() [member function]
+    void PriXWrapper::SetUniqueId(SteamID & PlayerUniqueId) [member function] [deprecated]
+    void PriXWrapper::UnregisterPlayerFromSession() [member function]
+    void PriXWrapper::RegisterPlayerWithSession() [member function]
+    void PriXWrapper::OnTeamChanged() [member function]
+    void PriXWrapper::SetPlayerTeam(TeamInfoWrapper NewTeam) [member function]
+    void PriXWrapper::eventOnOwnerChanged() [member function]
+    void PriXWrapper::eventSetPlayerName(std::string S) [member function]
+    void PriXWrapper::EventDestroyed(PriXWrapper PRI) [member function]
+    void PriXWrapper::EventTeamChanged(PriXWrapper PRI) [member function]
+    void PriXWrapper::EventUniqueIdChanged(PriXWrapper PRI) [member function]
+    void PriXWrapper::EventPlayerNameChanged(PriXWrapper PRI) [member function]
+private:
+    PriXWrapper::Impl [class declaration]
+    PriXWrapper::pimpl [variable]
+

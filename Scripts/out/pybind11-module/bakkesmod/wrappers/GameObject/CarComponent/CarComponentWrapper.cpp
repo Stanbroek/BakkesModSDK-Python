@@ -1,0 +1,58 @@
+void bind_CarComponentWrapper(pybind11::module& m)
+{
+
+	pybind11::class_<CarComponentWrapper, std::shared_ptr<CarComponentWrapper>, ActorWrapper> cl_CarComponentWrapper(m, "CarComponentWrapper");
+	cl_CarComponentWrapper.def(pybind11::init<uintptr_t>(), pybind11::arg("mem"));
+	cl_CarComponentWrapper.def(pybind11::init<CarComponentWrapper const &>(), pybind11::arg("other"));
+	// cl_CarComponentWrapper.def(pybind11::del<>());
+	cl_CarComponentWrapper.def("GetFXActorArchetype", [](CarComponentWrapper& cls_) { return cls_.GetFXActorArchetype(); });
+	cl_CarComponentWrapper.def("SetFXActorArchetype", [](CarComponentWrapper& cls_, FXActorWrapper newFXActorArchetype) { return cls_.SetFXActorArchetype(newFXActorArchetype); }, pybind11::arg("newFXActorArchetype"));
+	cl_CarComponentWrapper.def("GetbDisabled", [](CarComponentWrapper& cls_) { return cls_.GetbDisabled(); });
+	cl_CarComponentWrapper.def("SetbDisabled", [](CarComponentWrapper& cls_, long unsigned int newbDisabled) { return cls_.SetbDisabled(newbDisabled); }, pybind11::arg("newbDisabled"));
+	cl_CarComponentWrapper.def("GetbAutoActivate", [](CarComponentWrapper& cls_) { return cls_.GetbAutoActivate(); });
+	cl_CarComponentWrapper.def("SetbAutoActivate", [](CarComponentWrapper& cls_, long unsigned int newbAutoActivate) { return cls_.SetbAutoActivate(newbAutoActivate); }, pybind11::arg("newbAutoActivate"));
+	cl_CarComponentWrapper.def("GetbSimulateComponent", [](CarComponentWrapper& cls_) { return cls_.GetbSimulateComponent(); });
+	cl_CarComponentWrapper.def("SetbSimulateComponent", [](CarComponentWrapper& cls_, long unsigned int newbSimulateComponent) { return cls_.SetbSimulateComponent(newbSimulateComponent); }, pybind11::arg("newbSimulateComponent"));
+	cl_CarComponentWrapper.def("GetbCreated", [](CarComponentWrapper& cls_) { return cls_.GetbCreated(); });
+	cl_CarComponentWrapper.def("SetbCreated", [](CarComponentWrapper& cls_, long unsigned int newbCreated) { return cls_.SetbCreated(newbCreated); }, pybind11::arg("newbCreated"));
+	cl_CarComponentWrapper.def("GetbActive", [](CarComponentWrapper& cls_) { return cls_.GetbActive(); });
+	cl_CarComponentWrapper.def("SetbActive", [](CarComponentWrapper& cls_, long unsigned int newbActive) { return cls_.SetbActive(newbActive); }, pybind11::arg("newbActive"));
+	cl_CarComponentWrapper.def("GetbRemovedFromCar", [](CarComponentWrapper& cls_) { return cls_.GetbRemovedFromCar(); });
+	cl_CarComponentWrapper.def("SetbRemovedFromCar", [](CarComponentWrapper& cls_, long unsigned int newbRemovedFromCar) { return cls_.SetbRemovedFromCar(newbRemovedFromCar); }, pybind11::arg("newbRemovedFromCar"));
+	cl_CarComponentWrapper.def("GetComponentData", [](CarComponentWrapper& cls_) { return cls_.GetComponentData(); });
+	cl_CarComponentWrapper.def("SetComponentData", [](CarComponentWrapper& cls_, unsigned char newComponentData) { return cls_.SetComponentData(newComponentData); }, pybind11::arg("newComponentData"));
+	cl_CarComponentWrapper.def("GetReplicatedActive", [](CarComponentWrapper& cls_) { return cls_.GetReplicatedActive(); });
+	cl_CarComponentWrapper.def("SetReplicatedActive", [](CarComponentWrapper& cls_, unsigned char newReplicatedActive) { return cls_.SetReplicatedActive(newReplicatedActive); }, pybind11::arg("newReplicatedActive"));
+	cl_CarComponentWrapper.def("GetActivator", [](CarComponentWrapper& cls_) { return cls_.GetActivator(); });
+	cl_CarComponentWrapper.def("SetActivator", [](CarComponentWrapper& cls_, PriWrapper newActivator) { return cls_.SetActivator(newActivator); }, pybind11::arg("newActivator"));
+	cl_CarComponentWrapper.def("GetVehicle", [](CarComponentWrapper& cls_) { return cls_.GetVehicle(); });
+	cl_CarComponentWrapper.def("SetVehicle", [](CarComponentWrapper& cls_, VehicleWrapper newVehicle) { return cls_.SetVehicle(newVehicle); }, pybind11::arg("newVehicle"));
+	cl_CarComponentWrapper.def("GetCar", [](CarComponentWrapper& cls_) { return cls_.GetCar(); });
+	cl_CarComponentWrapper.def("SetCar", [](CarComponentWrapper& cls_, CarWrapper newCar) { return cls_.SetCar(newCar); }, pybind11::arg("newCar"));
+	cl_CarComponentWrapper.def("GetActivityTime", [](CarComponentWrapper& cls_) { return cls_.GetActivityTime(); });
+	cl_CarComponentWrapper.def("SetActivityTime", [](CarComponentWrapper& cls_, float newActivityTime) { return cls_.SetActivityTime(newActivityTime); }, pybind11::arg("newActivityTime"));
+	cl_CarComponentWrapper.def("GetReplicatedActivityTime", [](CarComponentWrapper& cls_) { return cls_.GetReplicatedActivityTime(); });
+	cl_CarComponentWrapper.def("SetReplicatedActivityTime", [](CarComponentWrapper& cls_, float newReplicatedActivityTime) { return cls_.SetReplicatedActivityTime(newReplicatedActivityTime); }, pybind11::arg("newReplicatedActivityTime"));
+	cl_CarComponentWrapper.def("GetFXActor", [](CarComponentWrapper& cls_) { return cls_.GetFXActor(); });
+	cl_CarComponentWrapper.def("SetFXActor", [](CarComponentWrapper& cls_, FXActorWrapper newFXActor) { return cls_.SetFXActor(newFXActor); }, pybind11::arg("newFXActor"));
+	cl_CarComponentWrapper.def("eventFellOutOfWorld", [](CarComponentWrapper& cls_) { return cls_.eventFellOutOfWorld(); });
+	cl_CarComponentWrapper.def("GetInactiveTime", [](CarComponentWrapper& cls_) { return cls_.GetInactiveTime(); });
+	cl_CarComponentWrapper.def("GetActiveTime", [](CarComponentWrapper& cls_) { return cls_.GetActiveTime(); });
+	cl_CarComponentWrapper.def("ApplyForces", [](CarComponentWrapper& cls_, float ActiveTime) { return cls_.ApplyForces(ActiveTime); }, pybind11::arg("ActiveTime"));
+	cl_CarComponentWrapper.def("PrePhysicsStep", [](CarComponentWrapper& cls_, float DeltaTime) { return cls_.PrePhysicsStep(DeltaTime); }, pybind11::arg("DeltaTime"));
+	cl_CarComponentWrapper.def("RemoveFromCar", [](CarComponentWrapper& cls_) { return cls_.RemoveFromCar(); });
+	cl_CarComponentWrapper.def("CanDeactivate", [](CarComponentWrapper& cls_) { return cls_.CanDeactivate(); });
+	cl_CarComponentWrapper.def("ConditionalDeactivate", [](CarComponentWrapper& cls_) { return cls_.ConditionalDeactivate(); });
+	cl_CarComponentWrapper.def("CanActivate", [](CarComponentWrapper& cls_) { return cls_.CanActivate(); });
+	cl_CarComponentWrapper.def("ConditionalActivate", [](CarComponentWrapper& cls_) { return cls_.ConditionalActivate(); });
+	cl_CarComponentWrapper.def("SetActive", [](CarComponentWrapper& cls_, long unsigned int bNewActive) { return cls_.SetActive(bNewActive); }, pybind11::arg("bNewActive"));
+	cl_CarComponentWrapper.def("Deactivate2", [](CarComponentWrapper& cls_) { return cls_.Deactivate2(); });
+	cl_CarComponentWrapper.def("Activate2", [](CarComponentWrapper& cls_) { return cls_.Activate2(); });
+	cl_CarComponentWrapper.def("UnregisterCarEvents", [](CarComponentWrapper& cls_) { return cls_.UnregisterCarEvents(); });
+	cl_CarComponentWrapper.def("RegisterCarEvents", [](CarComponentWrapper& cls_) { return cls_.RegisterCarEvents(); });
+	cl_CarComponentWrapper.def("HandleVehicleSetup", [](CarComponentWrapper& cls_, CarWrapper InCar) { return cls_.HandleVehicleSetup(InCar); }, pybind11::arg("InCar"));
+	cl_CarComponentWrapper.def("OnVehicleSetupComplete", [](CarComponentWrapper& cls_) { return cls_.OnVehicleSetupComplete(); });
+	cl_CarComponentWrapper.def("Create2", [](CarComponentWrapper& cls_, CarWrapper OwnerCar, PriWrapper InActivator) { return cls_.Create2(OwnerCar, InActivator); }, pybind11::arg("OwnerCar"), pybind11::arg("InActivator"));
+	cl_CarComponentWrapper.def("ClientUpdateActive", [](CarComponentWrapper& cls_) { return cls_.ClientUpdateActive(); });
+	cl_CarComponentWrapper.def("EventActivationChanged", [](CarComponentWrapper& cls_, CarComponentWrapper CarComponent) { return cls_.EventActivationChanged(CarComponent); }, pybind11::arg("CarComponent"));
+}

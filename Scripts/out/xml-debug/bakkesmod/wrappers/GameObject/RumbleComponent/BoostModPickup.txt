@@ -1,0 +1,18 @@
+BoostModPickup [class]
+public:
+    BoostModPickup::BoostModPickup(uintptr_t mem) [constructor]
+    BoostModPickup::BoostModPickup(BoostModPickup const & other) [constructor]
+    BoostModPickup & BoostModPickup::operator=(BoostModPickup rhs) [member operator]
+    BoostModPickup::~BoostModPickup() [destructor]
+    long unsigned int BoostModPickup::GetbUnlimitedBoost() [member function]
+    void BoostModPickup::SetbUnlimitedBoost(long unsigned int newbUnlimitedBoost) [member function]
+    float BoostModPickup::GetBoostStrength() [member function]
+    void BoostModPickup::SetBoostStrength(float newBoostStrength) [member function]
+    float BoostModPickup::GetOldBoostStrength() [member function]
+    void BoostModPickup::SetOldBoostStrength(float newOldBoostStrength) [member function]
+    void BoostModPickup::PickupEnd() [member function]
+    void BoostModPickup::PickupStart() [member function]
+private:
+    BoostModPickup::Impl [class declaration]
+    BoostModPickup::pimpl [variable]
+

@@ -1,0 +1,17 @@
+ProductSlotWrapper [class]
+public:
+    ProductSlotWrapper::ProductSlotWrapper(uintptr_t mem) [constructor]
+    ProductSlotWrapper::ProductSlotWrapper(ProductSlotWrapper const & other) [constructor]
+    ProductSlotWrapper & ProductSlotWrapper::operator=(ProductSlotWrapper rhs) [member operator]
+    ProductSlotWrapper::~ProductSlotWrapper() [destructor]
+    bool ProductSlotWrapper::IsNull() const [member function]
+    bool ProductSlotWrapper::operator bool() const [casting operator]
+    UnrealStringWrapper ProductSlotWrapper::GetLabel() [member function]
+    UnrealStringWrapper ProductSlotWrapper::GetPluralLabel() [member function]
+    UnrealStringWrapper ProductSlotWrapper::GetDescription() [member function]
+    UnrealStringWrapper ProductSlotWrapper::GetOnlineLabel() [member function]
+    int ProductSlotWrapper::GetSlotIndex() [member function]
+private:
+    ProductSlotWrapper::Impl [class declaration]
+    ProductSlotWrapper::pimpl [variable]
+

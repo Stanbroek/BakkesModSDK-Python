@@ -1,0 +1,13 @@
+ProductTradeInWrapper [class]
+public:
+    ProductTradeInWrapper::ProductTradeInWrapper(uintptr_t mem) [constructor]
+    ProductTradeInWrapper::ProductTradeInWrapper(ProductTradeInWrapper const & other) [constructor]
+    ProductTradeInWrapper & ProductTradeInWrapper::operator=(ProductTradeInWrapper rhs) [member operator]
+    ProductTradeInWrapper::~ProductTradeInWrapper() [destructor]
+    ArrayWrapper<OnlineProductWrapper> ProductTradeInWrapper::GetProducts() const [member function]
+    bool ProductTradeInWrapper::IsNull() const [member function]
+    bool ProductTradeInWrapper::operator bool() const [casting operator]
+private:
+    ProductTradeInWrapper::Impl [class declaration]
+    ProductTradeInWrapper::pimpl [variable]
+

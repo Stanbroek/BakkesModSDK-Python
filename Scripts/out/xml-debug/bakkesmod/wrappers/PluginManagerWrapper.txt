@@ -1,0 +1,11 @@
+PluginManagerWrapper [class]
+public:
+    PluginManagerWrapper::PluginManagerWrapper(uintptr_t mem) [constructor]
+    PluginManagerWrapper::PluginManagerWrapper(PluginManagerWrapper const & other) [constructor]
+    PluginManagerWrapper & PluginManagerWrapper::operator=(PluginManagerWrapper rhs) [member operator]
+    PluginManagerWrapper::~PluginManagerWrapper() [destructor]
+    std::vector<std::shared_ptr<BakkesMod::Plugin::LoadedPlugin>, std::allocator<std::shared_ptr<BakkesMod::Plugin::LoadedPlugin> > > * PluginManagerWrapper::GetLoadedPlugins() [member function]
+private:
+    PluginManagerWrapper::Impl [class declaration]
+    PluginManagerWrapper::pimpl [variable]
+

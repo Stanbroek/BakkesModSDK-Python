@@ -1,0 +1,14 @@
+DataAssetDatabaseWrapper [class]
+public:
+    DataAssetDatabaseWrapper::DataAssetDatabaseWrapper(uintptr_t mem) [constructor]
+    DataAssetDatabaseWrapper::DataAssetDatabaseWrapper(DataAssetDatabaseWrapper const & other) [constructor]
+    DataAssetDatabaseWrapper & DataAssetDatabaseWrapper::operator=(DataAssetDatabaseWrapper rhs) [member operator]
+    DataAssetDatabaseWrapper::~DataAssetDatabaseWrapper() [destructor]
+    bool DataAssetDatabaseWrapper::IsNull() const [member function]
+    bool DataAssetDatabaseWrapper::operator bool() const [casting operator]
+    std::string DataAssetDatabaseWrapper::GetName(int DataAssetID) [member function]
+    int DataAssetDatabaseWrapper::GetID(std::string & DataAssetName) [member function]
+private:
+    DataAssetDatabaseWrapper::Impl [class declaration]
+    DataAssetDatabaseWrapper::pimpl [variable]
+

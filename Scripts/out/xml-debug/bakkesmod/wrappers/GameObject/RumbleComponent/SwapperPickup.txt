@@ -1,0 +1,15 @@
+SwapperPickup [class]
+public:
+    SwapperPickup::SwapperPickup(uintptr_t mem) [constructor]
+    SwapperPickup::SwapperPickup(SwapperPickup const & other) [constructor]
+    SwapperPickup & SwapperPickup::operator=(SwapperPickup rhs) [member operator]
+    SwapperPickup::~SwapperPickup() [destructor]
+    CarWrapper SwapperPickup::GetOtherCar() [member function]
+    void SwapperPickup::SetOtherCar(CarWrapper newOtherCar) [member function]
+    void SwapperPickup::PickupEnd() [member function]
+    void SwapperPickup::OnTargetChanged() [member function]
+    void SwapperPickup::PickupStart() [member function]
+private:
+    SwapperPickup::Impl [class declaration]
+    SwapperPickup::pimpl [variable]
+

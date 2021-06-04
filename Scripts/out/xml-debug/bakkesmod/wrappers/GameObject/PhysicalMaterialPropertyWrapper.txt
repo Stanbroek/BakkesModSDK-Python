@@ -1,0 +1,18 @@
+PhysicalMaterialPropertyWrapper [class]
+public:
+    PhysicalMaterialPropertyWrapper::PhysicalMaterialPropertyWrapper(uintptr_t mem) [constructor]
+    PhysicalMaterialPropertyWrapper::PhysicalMaterialPropertyWrapper(PhysicalMaterialPropertyWrapper const & other) [constructor]
+    PhysicalMaterialPropertyWrapper & PhysicalMaterialPropertyWrapper::operator=(PhysicalMaterialPropertyWrapper rhs) [member operator]
+    PhysicalMaterialPropertyWrapper::~PhysicalMaterialPropertyWrapper() [destructor]
+    bool PhysicalMaterialPropertyWrapper::IsNull() const [member function]
+    bool PhysicalMaterialPropertyWrapper::operator bool() const [casting operator]
+    float PhysicalMaterialPropertyWrapper::GetTireFrictionScale() [member function]
+    void PhysicalMaterialPropertyWrapper::SetTireFrictionScale(float newTireFrictionScale) [member function]
+    long unsigned int PhysicalMaterialPropertyWrapper::GetbStickyWheels() [member function]
+    void PhysicalMaterialPropertyWrapper::SetbStickyWheels(long unsigned int newbStickyWheels) [member function]
+    long unsigned int PhysicalMaterialPropertyWrapper::GetbConsiderForGround() [member function]
+    void PhysicalMaterialPropertyWrapper::SetbConsiderForGround(long unsigned int newbConsiderForGround) [member function]
+private:
+    PhysicalMaterialPropertyWrapper::Impl [class declaration]
+    PhysicalMaterialPropertyWrapper::pimpl [variable]
+

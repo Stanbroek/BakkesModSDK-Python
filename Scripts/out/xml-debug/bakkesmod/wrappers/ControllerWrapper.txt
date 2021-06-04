@@ -1,0 +1,11 @@
+ControllerWrapper [class]
+public:
+    ControllerWrapper::ControllerWrapper(uintptr_t mem) [constructor]
+    ControllerWrapper::ControllerWrapper(ControllerWrapper const & other) [constructor]
+    ControllerWrapper & ControllerWrapper::operator=(ControllerWrapper rhs) [member operator]
+    ControllerWrapper::~ControllerWrapper() [destructor]
+    PlayerReplicationInfoWrapper ControllerWrapper::GetPlayerReplicationInfo() [member function]
+private:
+    ControllerWrapper::Impl [class declaration]
+    ControllerWrapper::pimpl [variable]
+
