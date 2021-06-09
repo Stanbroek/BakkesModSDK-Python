@@ -7,7 +7,7 @@ Inspired by [BakkesPython](https://github.com/Martinii89/BakkesPython) made by [
 ## Generate bindings (*optional*):
 - Make sure the `BAKKESMODSDK_DIR` value in [generate_sdk.py](/Scripts/generate_sdk.py) is set to the correct folder.
 - Generate the bindings with for example `generate_sdk.py bakkesmodplugin.cpp -o out -pybind11-module`
-- Fix all the errors, most of them should be detailed in [bindings.cpp](\PythonPlugin\bindings.cpp).
+- Fix all the errors, most of them should be detailed in [bindings.cpp](/PythonPlugin/bindings.cpp).
 
 ## Compile plugin:
 - Make sure you have the python libs installed from [https://www.python.org/downloads/](https://www.python.org/downloads/).
