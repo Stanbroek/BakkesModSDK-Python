@@ -4,6 +4,7 @@ from typing import Callable
 from functools import wraps
 from bakkesmod import cvarManager, gameWrapper, BakkesModPlugin
 
+__all__ = ["plugin", "onLoad", "onUnload"]
 
 _plugin_class = None
 _plugin_class_instance = None

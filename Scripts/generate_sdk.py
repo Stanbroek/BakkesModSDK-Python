@@ -50,7 +50,7 @@ def parse_cpp_file(filename: str, use_cache: bool = True) -> declarations.scoped
         xml_generator_path=generator_path,
         xml_generator=generator_name,
         working_directory=BAKKESMODSDK_DIR,
-        cflags="-w -I \"{BAKKESMODSDK_DIR}\" -D _NODISCARD=\"\" -D HINSTANCE=\"void*\"")
+        cflags="-w -I \"{BAKKESMODSDK_DIR}\"")
 
     # Parse the c++ file.
     start = time.time()

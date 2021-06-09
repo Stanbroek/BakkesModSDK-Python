@@ -257,7 +257,9 @@ def dribble(args):
 
 
 def tick(args):
-    gameWrapper.HookEvent('Function GameEvent_Soccar_TA.Active.Tick', lambda args: print("tick"))
+    def callback(eventName):
+        print('tick')
+    gameWrapper.HookEvent('Function GameEvent_Soccar_TA.Active.Tick', callback)
 
 
 def wallreads(args):
