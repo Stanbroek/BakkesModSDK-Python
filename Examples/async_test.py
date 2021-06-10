@@ -1,27 +1,15 @@
 import asyncio
-from bmasync import BMEventLoopPolicy
+from bmutils import logger, decorators
 
-loop = None
-
-
-async def main():
-    print('blieb')
-    await asyncio.sleep(5)
-    print('bloeb')
+logger.redirectStandardStreams()
 
 
-def onLoad():
-    asyncio.set_event_loop_policy(BMEventLoopPolicy())
-    global loop
-    loop = asyncio.new_event_loop()
-    # loop.set_debug(True)
-    asyncio.set_event_loop(loop)
-    asyncio.ensure_future(main())
-    loop.start()
+@decorators.bmasync
+async def onLoad():
+    print("onLoad 1")
+    await asyncio.sleep(3)
+    print("onLoad 2")
 
 
 def onUnload():
-    global loop
-    if loop:
-        loop.stop()
-        loop = None
+    print("onUnload 3")

@@ -1,6 +1,8 @@
 import sys
 import bakkesmod
+from bmutils import logger
 
+logger.redirectStandardStreams()
 
 print("global print")
 

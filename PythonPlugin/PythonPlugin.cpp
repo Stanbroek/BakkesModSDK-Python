@@ -74,10 +74,8 @@ void PythonPlugin::LoadPlugin(const std::string& plugin)
     }
     
     const std::shared_ptr<LoadedPlugin> loadedPlugin = std::make_shared<LoadedPlugin>(pythonPluginFolder / plugin);
-    logStream(plugin);
     if (pybind11::hasattr(loadedPlugin->Module, "onLoad")) {
         CATCH_PYTHON_EXCEPTIONS(loadedPlugin->Module.attr("onLoad")(););
-        logStream(plugin);
     }
     else {
         WARNING_LOG("{} does not have a onLoad function", plugin);
@@ -97,13 +95,11 @@ void PythonPlugin::UnloadPlugin(const std::string& plugin)
     const std::shared_ptr<LoadedPlugin>& loadedPlugin = loadedPlugins[to_lower(plugin)];
     if (pybind11::hasattr(loadedPlugin->Module, "onUnload")) {
         LOG_PYTHON_EXCEPTIONS(loadedPlugin->Module.attr("onUnload")(););
-        logStream(plugin);
     }
     else {
         WARNING_LOG("{} does not have a onUnload function", plugin);
     }
     loadedPlugins.erase(to_lower(plugin));
-    logStream(plugin);
 }
 
 
@@ -131,33 +127,11 @@ void PythonPlugin::EnsurePlugin(const std::string& plugin)
 }
 
 
-/// <summary>Logs pythons stdout and stderr buffers to BakkesMod.</summary>
-/// <param name="pluginName">Name of the plugin that filled the buffers.</param>
-void PythonPlugin::logStream(const std::string& pluginName)
-{
-    std::stringstream stdoutStream(streamRedirect.stdoutString());
-    if (stdoutStream && stdoutStream.rdbuf()->in_avail()) {
-        std::string line;
-        while (std::getline(stdoutStream, line, '\n')) {
-            LOG("[{}] {}", pluginName, line);
-        }
-    }
-
-    std::stringstream stderrStream(streamRedirect.stderrString());
-    if (stderrStream && stderrStream.rdbuf()->in_avail()) {
-        std::string line;
-        while (std::getline(stderrStream, line, '\n')) {
-            ERROR_LOG("[{}] {}", pluginName, line);
-        }
-    }
-}
-
-
 /// <summary>Registers notifiers and variables to interact with the plugin on load.</summary>
 void PythonPlugin::OnLoad()
 {
     BakkesModCrashesFolder = gameWrapper->GetBakkesModPath() / L"crashes";
-    if (!exists(BakkesModCrashesFolder)) {
+    if (!std::filesystem::exists(BakkesModCrashesFolder)) {
         std::filesystem::create_directory(BakkesModCrashesFolder);
     }
 
@@ -230,7 +204,7 @@ void PythonPlugin::OnLoad()
 
         LOG("Usage: pplugin reloadall|unloadall|list|load|unload|reload|ensure [pluginname]");
     }, "load/unload/reload/list python plugins, usage: pplugin reloadall|unloadall|list|load|unload|reload|ensure [pluginname]", PERMISSION_ALL);
-    
+
     RegisterNotifier("pp_list_loaded_plugins", [this](const std::vector<std::string>&) {
         if (loadedPlugins.empty()) {
             LOG("No plugins are loaded");
@@ -246,12 +220,6 @@ void PythonPlugin::OnLoad()
         LOG("Refreshing cache");
         cvarManager->executeCommand("sleep 1; plugin load " + pluginName);
     }, "Refreshes python cache", PERMISSION_ALL);
-
-    /* Register Hooks */
-    HookEventWithCaller<ActorWrapper>("Function Engine.GameViewportClient.Tick",
-        [this](const ActorWrapper&, void*, const std::string&) {
-            logStream("Global");
-        });
 }
 
 

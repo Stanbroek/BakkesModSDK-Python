@@ -105,7 +105,7 @@ def boom(args):
 
     def shootie(gw):
         ball.SetVelocity(shot)
-        print("VEL X: " + str(shot.X) + ", Y:" + str(shot.Y) + ", Z:" + str(shot.Z))
+        cvarManager.log("VEL X: " + str(shot.X) + ", Y:" + str(shot.Y) + ", Z:" + str(shot.Z))
 
     gameWrapper.SetTimeout(shootie, 1)
 
@@ -258,7 +258,7 @@ def dribble(args):
 
 def tick(args):
     def callback(eventName):
-        print('tick')
+        cvarManager.log("tick")
     gameWrapper.HookEvent('Function GameEvent_Soccar_TA.Active.Tick', callback)
 
 

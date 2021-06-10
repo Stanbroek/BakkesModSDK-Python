@@ -1,11 +1,12 @@
+import asyncio
 import bakkesmod
 from bmutils import logger, decorators
 
 logger.redirectStandardStreams()
 
 
-@decorators.plugin("TestPlugin", decorators.PLUGINTYPE_NORMAL)
-class Test(bakkesmod.BakkesModPlugin):
+@decorators.plugin("AsyncTestPlugin", decorators.PLUGINTYPE_ASYNC)
+class AsyncTest(bakkesmod.BakkesModPlugin):
     def __init__(self):
         super().__init__()
         print("init class")
@@ -14,11 +15,11 @@ class Test(bakkesmod.BakkesModPlugin):
         print("del class")
 
     @decorators.onLoad
-    def onLoad(self):
-        print("onLoad class")
-        print(self.gameWrapper)
-        print(self.cvarManager)
+    async def onLoad(self):
+        print("onLoad class 1")
+        await asyncio.sleep(3)
+        print("onLoad class 2")
 
     @decorators.onUnload
     def onUnload(self):
-        print("onUnload class")
+        print("onUnload class 3")
